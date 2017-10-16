@@ -1,0 +1,195 @@
+body,p{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #1f2437;
+}
+.yq_main{
+	width: 100%;
+	min-width: 1200px;
+	padding:2.223% 1.2% 2.223% 0;
+}
+
+
+.yq_right{
+	width: 91.623%;
+	margin-left:2.223%;
+}
+
+.yq_right1,div.tab,.tab div{
+	width: 100%;
+}
+.yq_right2{
+	width: 100%;
+	margin-top: 20px;
+}
+
+
+// .slideTxtBox{width: 100%}
+
+
+
+.yq_searve_one,.yq_searve_two,.yq_searve_three,.yq_searve_four{
+	width: 20.39044842608667%;
+	height: auto;
+	background-size: 100%;
+}
+
+.yq_start_one,.yq_start_two,.yq_start_three,.yq_start_four{
+	width: 34.96675292344983%;
+	height: auto;
+}
+
+.yq_show_one{
+	width: 19.5%;
+	// background: red;
+}
+
+
+
+.yq_right_order ul{
+	width: 100%;
+}
+
+
+
+.yq_a_com{
+	font-size: 1.375em;
+}
+
+
+.yq_one,.yq_two,.yq_three,.yq_four{
+	background-repeat: no-repeat;
+}
+
+
+
+.yq_right_order ul li{
+	width: 25%;
+	max-width: 309px;
+}
+
+.yq_show_two{
+	width: 13.43042071197411%;
+}
+
+
+.yq_right_cm .yq_right1{
+	width: 98%;
+}
+
+.slideTxtBox{
+	overflow: hidden;
+}
+
+.server_icon{
+	margin:52px auto 30px;
+}
+div.server_hover{
+	border-radius: 4px;
+	height: 100%;
+}
+div.server_hover_left{
+	float: left;
+	width: 47%;
+	text-align: center;
+	height:100%;
+	background:#0085d0;
+}
+
+div.server_hover_right{
+	float: right;
+	width: 48%;
+	height: 100%;
+	text-align: center;
+	background:#353B56;
+	padding: 0 2.5%;
+	position: relative;
+}
+.server_hover{
+	display: none;
+	border:2px solid #0085d0;
+	border-radius: 4px; 
+}
+img.server_icon_hover{
+	margin-top: 94px;
+	margin-bottom: 10px;
+}
+.server_on_detail{
+	font-size: 12px;
+	color: #eee;
+	// font-weight: bold;
+	margin-top: 5px;
+	min-width: 162px;
+}
+
+.server_on_title{
+	font-size: 18px;
+
+
+}
+
+.server_hover_right>.right_content>div{
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+.right_content{
+	position:absolute;
+	top:50%;
+	-webkit-transform:translate(0,-50%);
+	-moz-transform:translate(0,-50%);
+	-ms-transform:translate(0,-50%);
+	top:10%\0;
+}
+
+.server_hover_right>.right_content div.part4{
+	margin-bottom: 0;
+}
+
+div.attribute{
+	width: 24%;
+	margin-right: 1.056%;
+	height: 90px;
+	background:#2B3048;
+	// text-align: center;
+	position: relative;
+	padding:1px;
+	display: inline-block;
+
+}
+.attr-content{
+	width: 175px;
+	// height: 40px;
+	margin-top:22.5px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1px;
+	height: 45px;
+	position: relative;
+}
+
+.attr-content img{
+	// float: left;
+	display: inline-block;
+	margin-right: 15px;
+	margin-top: 2px;
+}
+.attr-title{
+	font-size: 17px;
+	color: #ccc;
+	position: absolute;
+	top: 0;
+}
+
+.attr-detail{
+	font-size: 12px;
+	color: #999;
+}
+
+div.attr-right{
+	display: inline-block;
+}
+
+

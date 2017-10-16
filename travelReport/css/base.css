@@ -1,0 +1,572 @@
+body,ul,li,p,th,td,h2{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+img{
+	border: none;
+}
+
+a{
+	color:#4c4c4c;
+	text-decoration: none;
+}
+button{
+	border: none;
+	background: transparent;
+}
+body{
+	min-width: 1000px;
+	background: #eaf0f3;
+}
+/*字体重置 */
+body,input,button{
+	font:12px/1.5em "Microsoft YaHei",Arial;
+	color:#4c4c4c;
+}
+.mg0{
+	margin: 0!important;
+}
+.clearfix:before,.clearfix:after{
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.clearfix:after{
+	clear: both;
+}
+
+.header{
+	overflow: hidden;
+	height: 50px;
+	background: #5ac8de;
+	line-height: 50px;
+	paddng-left: 20px;
+	padding-right: 1.4%;
+}
+
+.logo{
+	float: left;
+	margin-top: -2px;
+	margin-left: 15px;
+}
+
+.logoName{
+	font-size: 18px;
+	color: white;
+	vertical-align: middle;
+}
+.userModel{
+	float: right;
+}
+
+
+.usericon,.registicon,.editicon{
+	vertical-align: middle;
+	margin-right: 30px;
+}
+
+.nav{
+	width:19.5%;
+	height: 1000px;
+	float: left;
+	background: #485b89;
+}
+
+.nav a,.nav li{
+	color: #e5e5e5;
+}
+
+.nav>li{
+	padding:10px 0 10px 20px;
+	cursor: pointer;
+	display: block;
+	font-size: 15px;
+}
+
+.subList li a{
+	display: block;
+	padding:10px 0 10px 40px;
+	font-size: 13px;
+}
+.nav li:hover{
+	background: #4d6295;
+}
+.subnav{
+	padding:10px 0 10px 20px;
+}
+.nav img{
+	vertical-align: middle;
+}
+.nav .ico{
+	width:40px;
+	display: inline-block;
+}
+
+.subList,.subList2,.subList3{
+	display: none;
+}
+
+
+.subList .active,.subList3 .active{
+	background: #41527d!important; 
+}
+
+.subList2 li{
+	padding:10px 0 10px 66px;
+	font-size: 13px;
+}
+.subList3 li{
+	padding-left:88px;	 
+}
+.list1,.list2,.list3{
+	display: block;
+	padding: 10px 0;
+}
+.icoWrapper{
+
+	display: inline-block;
+	vertical-align: bottom;
+	width:30px; 
+}
+
+.icoToggle{
+	// margin-left: 24%;
+}
+
+.subList2 .icoToggle{
+	// margin-left: 53.5%;
+}
+
+.navText{
+	display: inline-block;
+	vertical-align: bottom;
+	width: 150px;
+}
+.subList2Text{
+	width: 149px;
+	display: inline-block;
+}
+
+.content{
+	width: 80.5%;
+	// height: 500px;
+	float: right;
+	// background: #ccc;
+	background: #eaf0f3;
+}
+
+.contentHead{
+	background: white;
+	padding:20px 20px 0 0px; 
+}
+
+span.cart{
+	height: 0px;
+	border:5px solid transparent;
+	border-top:5px solid #5ac8de;
+	display: inline-block;
+	margin-left: 8px;
+	vertical-align: middle;
+
+}
+
+div.select{
+	// display: inline-block;
+	float: left;
+	cursor: default;
+	// background: #ccc;
+	position: relative;
+}
+.toggleBox{
+	padding:2px 5px;
+	border: 1px solid #5ac8de;
+}
+.selectText{
+	font-size: 14px;
+	color: #5ac8de;
+}
+
+.query{
+	margin-left: 20px;
+}
+
+.selectMonth{
+	margin-left: 20px;
+}
+
+.btnQuery{
+	margin-left: 20px;
+	background: #5ac8de;
+	padding:3px 10px;
+	color: white;
+	display: inline-block;
+	cursor: pointer;
+}
+.btnQuery:hover{
+	background: #3c9fee;
+}
+.btnReport{
+	float: right;
+	display: inline-block;
+	cursor: pointer;
+}
+.selectList{
+	border:1px solid #e5e5e5;
+	border-top: none;
+	position: absolute;
+	background: white;
+	z-index: 9999;
+	width: 95%;
+}
+.selectList .item{
+	padding-left: 6px;
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+}
+.selectList .item:hover{
+	color: #5ac8de;
+}
+.selectList{
+	display: none;
+
+}
+.subNav{
+	position: relative;
+	margin-top: 20px;
+}
+.subNav li{
+	float: left;
+}
+.subNav a{
+	padding: 8px 20px;
+	font-size: 15px;
+	color: #677495;
+	display: inline-block;
+}
+
+#Slider{
+	position: absolute;
+	// width: 20px;
+	left: 0px;
+	top: 34px;
+	background: #5ac8de;
+	height: 3px;
+	border-radius: 10px;
+}
+
+.Item.active a{
+	color: #5ac8de;
+}
+.rowC{
+	width: 96.3%;
+	margin-right: auto;
+	margin-left: auto;
+	// background: white;
+}
+.data{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	background: white;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+h2.title{
+	font-weight: normal;
+	font-size: 20px;
+	color: #78797b;
+	// display: inline-block;
+}
+.change,.sum{
+	width: 48%;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+.dataTitle{
+	height: 50px;
+	line-height: 50px;
+	background: #f4f5f9;
+}
+
+.color{
+	border-radius: 50%;
+	width: 6px;
+	height: 6px;
+}
+
+
+
+.qushi,.tongji{
+	float: left;
+	width: 49%;
+	text-align: center;
+	border-radius: 4px;
+	background: white;
+}
+
+.tongji{
+	float: right;
+}
+.v-line{
+	width: 1px;
+	height: 80px;
+	background: #eee;
+	display: inline-block;
+	vertical-align: top;
+	
+}
+
+.ico_sum{
+	vertical-align: middle;
+	position: relative;
+	top: -1.5px;
+}
+
+.innerImg{
+	width: 88%;
+}
+
+.dataNumber{
+	font-size: 32px;
+	color: #56c9db;
+	margin-top: 35px;
+
+}
+
+.dataTitle{
+	margin-bottom: 40px;
+}
+
+.tongjiImg{
+	width: 60%;
+}
+.dayCounts{
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: top;
+	color: #333;
+	margin-left: 4%;
+}
+.dayCountsItem{
+	text-align: left;
+	margin-top: 6px;
+}
+.color{
+	display: inline-block;
+	vertical-align: middle;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	margin-right: 6px;
+}
+#source{
+	margin-top: 20px;
+	padding-bottom: 30px;
+	background: white;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.kyleft,.kyright{
+	width: 49%;
+}
+
+.kyleft{
+	float: left;
+
+}
+
+.kyright{
+	float: right;
+}
+.kyTitle{
+	margin-bottom: 15px;
+}
+
+.sourceMenu{
+	width: 68%;
+	border-radius: 400px;
+	border:1px solid #5cc9de;
+	font-size: 16px;
+	background: white;
+	width: 60%;
+	margin:20px auto 30px auto;
+}
+.paintTitle{
+	text-align: center;
+}
+
+.sourceMenu li{
+	border-radius: 100px;
+	height: 32px;
+	line-height: 32px;
+	float: left;
+	width: 33.33333333%;
+	cursor: default;
+}
+.sourceMenu li.active{
+	background: #5cc9de;
+	color: white;
+}
+.sourceData{
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+	// margin:-top 20px 0px 0px 10px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	margin-right: 0px;
+}
+.country{
+	width: 70px;
+	display: inline-block;
+	text-align: center;
+
+
+}
+
+div.reborn{
+	margin-right: 6px;
+	display: inline-block;
+	height: 14px;
+	border-radius: 100px;
+	background: #8dd9e7;
+	background: -webkit-linear-gradient(left, #968edb, #8dd9e7); 
+ background: -o-linear-gradient(right, #968edb, #8dd9e7);
+  background: -moz-linear-gradient(right, #968edb, #8dd9e7); 
+  background: linear-gradient(to right, #968edb, #8dd9e7); 
+
+}
+
+.sourceNum{
+	color: #8edae8;
+}
+#paint,#add{
+	margin-top: 20px;
+	text-align: center;
+	background: white;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.paintTitle,.hotTitle{
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 30px;
+}
+
+#sex,#age,#consume,#jishi,#lvyou,#dianshang,#tielu,#ditu,#zixun,#hangkong,#meishi,#yundong{
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.paintImg{
+	width: 90%;
+}
+.paintLine{
+	display: inline-block;
+	width: 1px;
+	height: 300px;
+	background: #eee;
+	vertical-align: middle;
+}
+
+#province,#analyze{
+	display: none;
+}
+#rank,#hot,#searchRank,#travelPath{
+	background: white;
+	text-align: center;
+}
+
+#rank,#hot,#searchRank,#travelPath{
+	margin-top: 20px;
+}
+
+.hotLine{
+	height: 220px;
+	display: inline-block;
+	vertical-align: middle;
+	background: #eee;
+	width: 1px;
+}
+#hot{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.rebornBox{
+	width: 70%;
+	margin-right: 6px;
+	// margin-left: 6px;
+	display: inline-block;
+	height: 14px;
+	border-radius: 100px;
+	border: #ccc;
+	text-align: left;
+}
+
+.rebornBox div{
+	height: 14px;
+	border-radius: 100px;
+}
+
+span.country{
+	width: 80px;
+	margin-right: 10px;
+
+}
+
+#searchRank,#travelPath{
+	padding-bottom: 20px;
+}
+.lookAll{
+	display: inline-block;
+	font-size: 18px;
+	color: #9891d8;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+#travelPath{
+
+}
+
+.hotRow{
+	margin-top: 40px;
+}
+
+.addTitle{
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 20px;
+	color: #666;
+}
+
+#add>div{
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+}
+
+.addLine{
+	display: inline-block;
+	vertical-align: top;
+	width: 1px;
+	background: #ddd;
+	height: 270px;
+	position: relative;
+	top: 30px;
+}
+
+#add div>img{
+	width: 85%;
+}

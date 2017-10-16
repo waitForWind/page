@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/list.js"></script>
+</head>
+<body >
+	<div class="header">
+		<div class="logo">
+			<img class="logoImg" src="../img/logo.png"/> <span class="logoName">广东移动</span>
+		</div>
+		<div class="userModel">
+			<span class="user">
+				<img class="usericon" src="../img/ico_user.png"><a href="javascript:;" class="welcome">管理员，欢迎您!</a>
+			</span>
+			<span class="login">
+				<img class="usericon" src="../img/ico_loginout.png"><a href="index.html" class="loginout">退出</a>
+			</span>
+		</div>
+		
+		
+	</div>
+	<div class="main">
+		<ul class="nav">
+			<li class="accountChange">
+				<a href="javascript:;">
+					<span class="ico"><img src="../img/ico_switch.png"></span>
+					账号切换
+				</a>
+			</li>
+			<ul class="users grayBorder">
+				<li class="userChoice">广发易淘金</li>
+				<li class="userChoice">广发理财</li>
+				<li class="userChoice">广发手机证券</li>
+				<li class="userChoice">广发手机银行</li>
+			</ul>
+			<li class="monitor">
+				<a href="tending.html">
+					<span class="ico"><img src="../img/ico_tending.png"></span>
+					整体趋势
+				</a>
+			</li>
+			<li class="duty" style="clear: both;background:#cde9f6;">
+				<a href="structure.html">
+					<span class="ico"><img src="../img/ico_user02.png"></span>
+					用户结构
+				</a>
+			</li>
+			<li class="list">
+				<a href="paint.html">
+					<span class="ico"><img src="../img/ico_userPaingting.png"></span>
+					用户画像
+				</a>
+			</li>
+			<li class="subnav">
+				<span class="ico"><img src="../img/ico_analyze.png"></span>
+				竞争分析
+				<img src="../img/ico_toggle.png" alt="" class="icoToggle" />
+			</li>
+			<div class="subList">
+				<a href="hx.html" class="list1">
+					<div style="width: 34px;display: inline-block;"></div>
+					<div class="icoWrapper">
+						<img src="../img/ico_hangye.png" alt="" class="" />
+					</div>
+					行业概况
+				</a>
+				<a href="jz.html" class="list2">
+					<div style="width: 34px;display: inline-block;"></div>
+					<div class="icoWrapper">
+						<img src="../img/ico_jzl.png" alt="" class="" />
+					</div>
+					竞争形势
+				</a>
+				<a href="contrast.html" class="list3">
+					<div style="width: 34px;display: inline-block;"></div>
+					<div class="icoWrapper">
+						<img src="../img/ico_zb.png" alt="" class="" />
+					</div>
+					指标对比
+				</a>
+						
+			</div>
+		</ul>
+		<div class="content" style="margin-top: 10px;">
+			<div class="welcomeU">
+				<div class="welText">欢迎您，</div>
+				<div class="xiala">
+					<span class="xialaText">广发易淘金</span> 
+					
+				</div>
+				<img src="../img/ico_close.png" alt="" class="closeWel" />	
+			</div>
+			<div class="structGraphy grayBorder">
+				<div class="structHead clearfix">
+					<div style="float: left;">
+						<div class="absolute ellipse blue">绝对值</div>
+						<div class="percent ellipse" style="background:#eeecec; ">百分比</div>
+					</div>
+					<div style="float: right;margin-right: 20px;">
+					 	<span style="position: relative;top: 1.5px;">指标类型</span>
+						<div class="zb ellipse2 blue" id="btnMonth" style="border-radius: 100px;position: relative;">
+							<div class="condition">
+								<span class="zbText">月指标</span>
+								<span class="cart" style="border-top:5px solid white; "></span>
+							</div>
+							<ul class="zblist">
+								<li>日指标</li>
+								<li>月指标</li>
+								<li>日累计</li>
+								<li>月累计</li>
+							</ul>
+						</div>
+						<div class="grayBorder ellipse2">
+							2016-1<span class="cart"></span>
+						</div>
+						&nbsp;至&nbsp;
+						<div class="grayBorder ellipse2">
+							2016-3<span class="cart"></span>
+						</div>
+						<button class="rect btnQuery" style="height: 20px;vertical-align: middle;margin-left: 18px;">查询</button>
+					</div>
+				</div>
+				<div class="structHints" style="text-align: center;">
+					<div class="hintGroup">
+						<span class="hintColor" style="background: #00a2d0;"></span>
+						APP使用客户
+					</div>
+					<div class="hintGroup">
+						<span class="hintColor" style="background: #04afe0;"></span>
+						新增用户
+					</div>
+					<div class="hintGroup">
+						<span class="hintColor" style="background: #07baee;"></span>
+						回流客户
+					</div>
+					<div class="hintGroup">
+						<span class="hintColor" style="background: #06edf5;"></span>
+						当月（0，3]天活跃用户
+					</div>
+				</div>
+				<div class="structHints" style="text-align: center;margin-top: 15px;margin-bottom: 5px;">
+					<div class="hintGroup">
+						<span class="hintColor" style="background: #66f0f5;"></span>
+						当月（3，7]天活跃用户
+					</div>
+					<div class="hintGroup">
+						<span class="hintColor" style="background: #9cf1f4;"></span>
+						当月（7，14]天活跃用户
+					</div>
+					<div class="hintGroup">
+						<span class="hintColor" style="background: #9cf1f4;"></span>
+						当月14天以上活跃用户
+					</div>
+					<div class="hintGroup">
+						<span class="hintColor" style="background: #ddfafb;"></span>
+						沉默用户
+					</div>
+				</div>
+				<img src="../img/hx.png" alt="" style="margin-bottom: 15px;width:93.49054629177423%;"/>
+			</div>
+			<div class="mingxi grayBorder clearfix">
+				<div class="mingxiTitle">
+					<span class="v-line blue"></span>
+					明细数据
+					<button class="btnMingxi rect">导出明细</button>
+					<div id="shouqi">
+						收起
+						<img src="../img/ico_shouqi.png">
+					</div>
+					<div id="zhankai">
+						展开
+						<img src="../img/ico_zhankai.png">
+					</div>
+				
+				</div>
+				<table class="mingxiTable">
+					<thead>
+						<tr>
+							<td>时间</td>
+							<td>APP用户数</td>
+							<td>新增用户数</td>
+							<td>回流用户数</td>
+							<td>当月（0，3]天活跃用户</td>
+							<td>当月（3，7]天活跃用户</td>
+							<td>当月（7，14]天活跃用户</td>
+							<td>当月（7，14]天活跃用户</td>
+							<td>沉默用户</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="blueText">
+							<td>2016-01</td>
+							<td>1200</td>
+							<td>218</td>
+							<td>33</td>
+							<td>156</td>
+							<td>169</td>
+							<td>67</td>
+							<td>200</td>
+							<td>52</td>
+						</tr>
+						<tr>
+							<td>2016-01</td>
+							<td>1200</td>
+							<td>218</td>
+							<td>33</td>
+							<td>156</td>
+							<td>169</td>
+							<td>67</td>
+							<td>200</td>
+							<td>52</td>
+						</tr>
+						<tr>
+							<td>2016-01</td>
+							<td>1200</td>
+							<td>218</td>
+							<td>33</td>
+							<td>156</td>
+							<td>169</td>
+							<td>67</td>
+							<td>200</td>
+							<td>52</td>
+						</tr>
+						<tr>
+							<td>2016-01</td>
+							<td>1200</td>
+							<td>218</td>
+							<td>33</td>
+							<td>156</td>
+							<td>169</td>
+							<td>67</td>
+							<td>200</td>
+							<td>52</td>
+						</tr>
+						<tr>
+							<td>2016-01</td>
+							<td>1200</td>
+							<td>218</td>
+							<td>33</td>
+							<td>156</td>
+							<td>169</td>
+							<td>67</td>
+							<td>200</td>
+							<td>52</td>
+						</tr>
+						<tr>
+							<td>2016-01</td>
+							<td>1200</td>
+							<td>218</td>
+							<td>33</td>
+							<td>156</td>
+							<td>169</td>
+							<td>67</td>
+							<td>200</td>
+							<td>52</td>
+						</tr>
+						<tr>
+							<td>2016-01</td>
+							<td>1200</td>
+							<td>218</td>
+							<td>33</td>
+							<td>156</td>
+							<td>169</td>
+							<td>67</td>
+							<td>200</td>
+							<td>52</td>
+						</tr>
+						<tr>
+							<td>2016-01</td>
+							<td>1200</td>
+							<td>218</td>
+							<td>33</td>
+							<td>156</td>
+							<td>169</td>
+							<td>67</td>
+							<td>200</td>
+							<td>52</td>
+						</tr>
+						<tr>
+							<td>2016-01</td>
+							<td>1200</td>
+							<td>218</td>
+							<td>33</td>
+							<td>156</td>
+							<td>169</td>
+							<td>67</td>
+							<td>200</td>
+							<td>52</td>
+						</tr>
+						<tr>
+							<td>2017-01</td>
+							<td>1120</td>
+							<td>2318</td>
+							<td>321</td>
+							<td>1126</td>
+							<td>1623</td>
+							<td>613</td>
+							<td>2110</td>
+							<td>533</td>
+						</tr>
+						<tr>
+							<td>2017-01</td>
+							<td>1120</td>
+							<td>2318</td>
+							<td>321</td>
+							<td>1126</td>
+							<td>1623</td>
+							<td>613</td>
+							<td>2110</td>
+							<td>533</td>
+						</tr>
+						<tr>
+							<td>2017-01</td>
+							<td>1120</td>
+							<td>2318</td>
+							<td>321</td>
+							<td>1126</td>
+							<td>1623</td>
+							<td>613</td>
+							<td>2110</td>
+							<td>533</td>
+						</tr>
+						<tr>
+							<td>2017-01</td>
+							<td>1120</td>
+							<td>2318</td>
+							<td>321</td>
+							<td>1126</td>
+							<td>1623</td>
+							<td>613</td>
+							<td>2110</td>
+							<td>533</td>
+						</tr>
+						<tr>
+							<td>2017-01</td>
+							<td>1120</td>
+							<td>2318</td>
+							<td>321</td>
+							<td>1126</td>
+							<td>1623</td>
+							<td>613</td>
+							<td>2110</td>
+							<td>533</td>
+						</tr>
+						<tr>
+							<td>2017-01</td>
+							<td>1120</td>
+							<td>2318</td>
+							<td>321</td>
+							<td>1126</td>
+							<td>1623</td>
+							<td>613</td>
+							<td>2110</td>
+							<td>533</td>
+						</tr>
+						<tr>
+							<td>2017-01</td>
+							<td>1120</td>
+							<td>2318</td>
+							<td>321</td>
+							<td>1126</td>
+							<td>1623</td>
+							<td>613</td>
+							<td>2110</td>
+							<td>533</td>
+						</tr>
+						<tr>
+							<td>2017-01</td>
+							<td>1120</td>
+							<td>2318</td>
+							<td>321</td>
+							<td>1126</td>
+							<td>1623</td>
+							<td>613</td>
+							<td>2110</td>
+							<td>533</td>
+						</tr>
+						<tr>
+							<td>2017-01</td>
+							<td>1120</td>
+							<td>2318</td>
+							<td>321</td>
+							<td>1126</td>
+							<td>1623</td>
+							<td>613</td>
+							<td>2110</td>
+							<td>533</td>
+						</tr>
+						<tr>
+							<td>2017-01</td>
+							<td>1120</td>
+							<td>2318</td>
+							<td>321</td>
+							<td>1126</td>
+							<td>1623</td>
+							<td>613</td>
+							<td>2110</td>
+							<td>533</td>
+						</tr>
+						<tr>
+							<td>2017-01</td>
+							<td>1120</td>
+							<td>2318</td>
+							<td>321</td>
+							<td>1126</td>
+							<td>1623</td>
+							<td>613</td>
+							<td>2110</td>
+							<td>533</td>
+						</tr>
+						<tr>
+							<td>2014-03</td>
+							<td>12320</td>
+							<td>23218</td>
+							<td>3321</td>
+							<td>1326</td>
+							<td>2223</td>
+							<td>1233</td>
+							<td>1230</td>
+							<td>1533</td>
+						</tr>
+						<tr>
+							<td>2014-03</td>
+							<td>12320</td>
+							<td>23218</td>
+							<td>3321</td>
+							<td>1326</td>
+							<td>2223</td>
+							<td>1233</td>
+							<td>1230</td>
+							<td>1533</td>
+						</tr>
+						<tr>
+							<td>2014-03</td>
+							<td>12320</td>
+							<td>23218</td>
+							<td>3321</td>
+							<td>1326</td>
+							<td>2223</td>
+							<td>1233</td>
+							<td>1230</td>
+							<td>1533</td>
+						</tr>
+						<tr>
+							<td>2014-03</td>
+							<td>12320</td>
+							<td>23218</td>
+							<td>3321</td>
+							<td>1326</td>
+							<td>2223</td>
+							<td>1233</td>
+							<td>1230</td>
+							<td>1533</td>
+						</tr>
+						<tr>
+							<td>2014-03</td>
+							<td>12320</td>
+							<td>23218</td>
+							<td>3321</td>
+							<td>1326</td>
+							<td>2223</td>
+							<td>1233</td>
+							<td>1230</td>
+							<td>1533</td>
+						</tr>
+						<tr>
+							<td>2014-03</td>
+							<td>12320</td>
+							<td>23218</td>
+							<td>3321</td>
+							<td>1326</td>
+							<td>2223</td>
+							<td>1233</td>
+							<td>1230</td>
+							<td>1533</td>
+						</tr>
+						<tr>
+							<td>2014-03</td>
+							<td>12320</td>
+							<td>23218</td>
+							<td>3321</td>
+							<td>1326</td>
+							<td>2223</td>
+							<td>1233</td>
+							<td>1230</td>
+							<td>1533</td>
+						</tr>
+						<tr>
+							<td>2014-03</td>
+							<td>12320</td>
+							<td>23218</td>
+							<td>3321</td>
+							<td>1326</td>
+							<td>2223</td>
+							<td>1233</td>
+							<td>1230</td>
+							<td>1533</td>
+						</tr>
+						<tr>
+							<td>2014-03</td>
+							<td>12320</td>
+							<td>23218</td>
+							<td>3321</td>
+							<td>1326</td>
+							<td>2223</td>
+							<td>1233</td>
+							<td>1230</td>
+							<td>1533</td>
+						</tr>
+						<tr>
+							<td>2014-03</td>
+							<td>12320</td>
+							<td>23218</td>
+							<td>3321</td>
+							<td>1326</td>
+							<td>2223</td>
+							<td>1233</td>
+							<td>1230</td>
+							<td>1533</td>
+						</tr>
+						<tr>
+							<td>2014-03</td>
+							<td>12320</td>
+							<td>23218</td>
+							<td>3321</td>
+							<td>1326</td>
+							<td>2223</td>
+							<td>1233</td>
+							<td>1230</td>
+							<td>1533</td>
+						</tr>
+						<tr>
+							<td>2014-03</td>
+							<td>12320</td>
+							<td>23218</td>
+							<td>3321</td>
+							<td>1326</td>
+							<td>2223</td>
+							<td>1233</td>
+							<td>1230</td>
+							<td>1533</td>
+						</tr>
+						<tr>
+							<td>2014-03</td>
+							<td>12320</td>
+							<td>23218</td>
+							<td>3321</td>
+							<td>1326</td>
+							<td>2223</td>
+							<td>1233</td>
+							<td>1230</td>
+							<td>1533</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pagePart">
+					<div class="pageModel clearfix" style="text-align: center;">
+					<div class="showCount">
+						当前一共<span class="pageNum"></span>页,<span class="count"></span>条记录
+					</div>
+
+					<ul class="page clearfix">
+						<li class="firstPage rect grayBorder disable">首页</li>	
+						<li class="pre rect grayBorder">上一页</li>
+						<li class="next rect grayBorder">下一页</li>
+						<li class="lastPage rect grayBorder">尾页</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(body).height();
+	</script>
+</body>
+</html>

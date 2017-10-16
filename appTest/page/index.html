@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/list.js"></script>
+</head>
+<style type="text/css">
+	.user a:hover{
+		color: cyan;
+	}
+</style>
+<body>
+	<div class="header">
+		<div class="wrapper clearfix">
+			<div class="logo">
+				<a href="#">
+					<img src="../img/logo.png" alt="广东移动"/>
+				</a>
+				<span class="logoText">广东移动</span>
+			</div>
+			<div class="user">
+				<div class="login">
+					<img class="ico ico_login" src="../img/ico_login.png">
+					<a class="loginText" href="tending.html">登录</a>
+				</div>
+				<div class="regist">
+					<img class="ico ico_regist" src="../img/ico_regist.png">
+					<a class="registText" href="javascript:;">注册</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="banner">
+			<img src="../img/banner.jpg" class="bannerImg">
+		</div>
+		<div class="analyze">
+			<div class="wrapper">
+				<h2 class="title">移动应用（APP）数据分析专家</h2>
+				<p class="detail">
+					一款简单、易用的移动APP数据统计分析产品，帮助移动APP开发者快速掌握市场竞争形势、及时监控用户发展趋势、全方位洞察用户特征。
+				</p>
+				<div class="btn-group">
+					<div class="btn btnTest">
+						立即使用
+					</div>
+					<div class="btn btnDemo">
+						查看案例
+					</div>
+				</div>
+				<div class="attribute">
+					<div class="attr attr1">
+						<img src="../img/ico_green.png" alt="" class="ico ico_green" />
+						<p class="attrText">市场竞争</p>
+					</div>
+					<div class="attr attr2">
+						<img src="../img/ico_blue.png" alt="" class="ico ico_blue" />
+						<p class="attrText">发展趋势</p>
+					</div>
+					<div class="attr attr3">
+						<img src="../img/ico_red.png" alt="" class="ico ico_red" />
+						<p class="attrText">用户洞测</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="all">
+			<div class="wrapper" style="padding-bottom: 1px;">
+				<h2 class="title" style="color: white;">全方位的数据深度解析</h2>
+				<p class="detail">
+					依托于广东移动海量的数据资源，识别<span class="specialNum">37000+</span>个APP，主流APP识别率超<span class="specialNum">95%</span>。
+				</p>
+				<div class="logoImg">
+					<a href="javascript:;" class="imgWrapper">
+						<img src="../img/jumei.png">
+					</a>
+					<a href="javascript:;" class="imgWrapper">
+						<img src="../img/didi.png">
+					</a>
+					<a href="javascript:;" class="imgWrapper">
+						<img src="../img/edaijia.png">
+					</a>
+					<a href="javascript:;" class="imgWrapper">
+						<img src="../img/tigger.png">
+					</a>
+					<a href="javascript:;" class="imgWrapper" style="margin-right: 0;">
+						<img src="../img/babybus.png">
+					</a>
+					<div class="spacing" style="height: 40px;"></div>
+					<a href="javascript:;" class="imgWrapper">
+						<img src="../img/xmly.png">
+					</a>
+					<a href="javascript:;" class="imgWrapper">
+						<img src="../img/qt.png">
+					</a>
+					<a href="javascript:;" class="imgWrapper">
+						<img src="../img/dkyd.png">
+					</a>
+					<a href="javascript:;" class="imgWrapper">
+						<img src="../img/qne.png">
+					</a>
+					<a href="javascript:;" class="imgWrapper" style="margin-right: 0;">
+						<img src="../img/xyk.png">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="system">
+			<div class="wrapper">
+				<h2 class="title">构建完善的APP分析体系，助力开发者运营决策</h2>
+				<ul class="choose clearfix">
+					<li class="active"><a href="javascript:;">发展趋势</a></li>
+					<li><a href="javascript:;">用户结构</a></li>
+					<li><a href="javascript:;">客户画像</a></li>
+					<li><a href="javascript:;" style="margin: 0;">竞争分析</a></li>
+					
+				</ul>
+				<div class="introduce clearfix">
+					<div class="introduceLeft">
+						<div class="start">
+							<img src="../img/ico_start.png" class="icoStart">
+							<h2 class="introduceTitle">发展趋势</h2>
+						</div>
+						<p >帮助开发者及时监控APP的使用情况，展示APP的使用用户、<br/>新增用户、活跃用户、回流用户、沉默、用户的发展趋势。</p>
+					</div>
+					<img class="show" src="../img/show.png"/>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="footer">
+		<p class="copyright">
+			Copyright©1999-2017  中国移动  版权所有<br />
+			中华人民共和国增值电信业务经营许可证      经营许可证编号：A2.B1.B2-20100001
+		</p>
+	</div>
+	<script type="text/javascript">
+		$('.choose li').click(function(){
+			$(this).siblings().removeClass('active');
+			$(this).addClass('active');
+		});
+	</script>
+</body>
+</html>

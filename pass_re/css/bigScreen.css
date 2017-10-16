@@ -1,0 +1,28 @@
+#indexScreen .bd ul li{
+	width: 100%;
+}
+
+#indexScreen .bd ul li img{
+	width: 100%;
+}
+#indexScreen .slideTxtBox1 .prev, .slideTxtBox1 .next{
+	top: 420px!important;
+}
+
+#indexScreen .slideTxtBox{
+	overflow: visible!important;
+}
+#indexScreen .slideTxtBox .tempWrap{
+	overflow: visible!important;
+}
+
+#indexScreen .slideTxtBox .tempWrap .bd{
+	overflow: visible!important;
+} 
+#indexScreen .yq_right2{
+	margin-top: 250px;
+}
+
+#indexScreen .hd{
+	bottom: -710px!important;
+}

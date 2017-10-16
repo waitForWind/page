@@ -1,0 +1,22 @@
+.content{
+	width: 78%;
+}
+
+.nav{
+	width: 22%;
+}
+.navText {
+    width: 127px;
+}
+.subList2Text {
+    width: 81.4%;
+    // display: inline-block;
+}
+
+.reborn{
+	width: 60%!important;
+}
+
+.nav{
+	height: 1480px!important;
+}

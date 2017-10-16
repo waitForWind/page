@@ -1,0 +1,94 @@
+@charset "utf-8";
+		/*动画*/
+		@keyframes scale{
+			from{
+				transform: scale(0.1);
+			}
+			to{
+				transform: scale(1);
+			}
+		}
+		@keyframes scale{
+			from{
+				transform: scale(0.1);
+			}
+			to{
+				transform: scale(1);
+			}
+		}
+		/*时间*/
+			.pingyione{
+				animation: scale  1s 1;
+				animation-fill-mode:forwards;
+			}
+			.pingyitwo{
+				animation: scale 1s 0.1s 1;
+				animation-fill-mode:forwards;
+			}
+			.pingyithree{
+				animation: scale 1s 0.2s 1;
+				animation-fill-mode:forwards;
+			}
+			.pingyifour{
+				animation: scale 1s 0.3s 1;
+				animation-fill-mode:forwards;
+			}
+			
+			/*页面*/
+			.yq_right_order{
+				height: 650px;
+				background: url(../images/order/bg.png) cover;
+				box-shadow: 4px 4px 8px rgba(0,0,0,0.16);
+				border-radius: 2px;
+				width: 1236px;
+			    float: left;
+			    margin-left: 30px;
+			    font-size: 0;
+			    display: none;
+			}
+			
+			.yq_right_nav{
+				height: 62px;
+			}
+			.yq_one{
+				background-image: url(../images/order/nav1.png);
+			}
+			.yq_two{
+				background-image: url(../images/order/nav2.png);
+			}
+			.yq_three{
+				background-image: url(../images/order/nav3.png);
+			}
+			.yq_four{
+				background-image: url(../images/order/nav4.png);
+			}
+			.yq_right_order ul{
+				height: 62px;
+				width: 1236px;
+				line-height: 62px;
+			}
+			.yq_right_order ul li{
+				width: 309px;
+				text-align: center;
+				float: left;
+				list-style: none;
+			}
+			.yq_right_order ul li a{
+				font-size: 22px;
+				text-decoration: none;
+				line-height: 62px;
+				display: inline-block;
+				width: 100%;
+			}
+			
+			.yq_a_com{
+				color: #888b9b;
+			}
+			.vis{
+				color: white;
+				font-weight: bold;
+			}
+			.yq_right_order{
+				background-color:#2b3048;
+				
+			}

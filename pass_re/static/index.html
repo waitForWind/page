@@ -1,0 +1,1040 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>index</title>
+		<script src="../js/jquery-1.10.1.min.js"></script>
+		<script src="../js/idangerous.swiper.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/idangerous.swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/order.css"/>
+		<link href="../css/swiper.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/resize.css"/>
+		<style type="text/css">
+		/*隐藏显示*/
+		.block{
+			display: block;
+		}
+		.none{
+			display: none;
+		}
+		/*首页轮播样式修改*/
+			.swiper-pagination-switch{
+				height: 4px;
+				width: 40px;
+				background: rgba(255,255,255,1);
+				border-radius: 2px;
+				margin: 0px 2px;
+				opacity: 0.5;
+			}
+			.swiper-active-switch{
+				background: rgba(255,255,255,1);
+				opacity: 1;
+			}
+			.swiper-container{
+				height: 535px;
+			}
+			/*一站式服务样式*/
+			.yq_right_seaver .yq_right1{
+				background-image: url(../images/seaver/bg.png);
+				padding: 30px 0px 38px 30px;
+				box-sizing: border-box;
+			}
+			.yq_right_seaver .yq_right1 h1{
+				font-size: 22px;
+				color: #FFFFFF;
+				padding-left: 13px;
+				border-left: #0085d0 2px solid;
+				margin-bottom: 38px;
+			}
+			.yq_right_seaver .yq_right_img{
+				height: 399px;
+				/*width: 248px;*/
+				text-align: center;
+				font-size: 16px;
+				color:#eee;
+				width: 20.56384742951907%;
+				border-right: #40455b solid 1px;
+				float: left;
+				background-repeat: no-repeat;
+			}
+			.yq_right_seaver .border_none{
+				border: none;
+			}
+			.yq_searve_one{
+				/*background-image: url(../images/seaver/fuwu2.png);*/
+			}
+			
+	
+		
+			.yq_right_seaver .yq_start_one{
+				height: 399px; 
+				/*width: 426px;*/
+				width: 35.76345747002922%;
+				/*background-image: url(../images/seaver/fuwu.png);*/
+				/*transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), z-index 0s 0.12s;*/
+				transition-property:width,height;
+				transition-duration:0.5s; 
+			}
+			.yq_right_seaver .yq_start_two{
+				/* height: 399px; */
+				/*width: 426px;*/
+				/*background-image: url(../images/seaver/shuju.png);*/
+				/*transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), z-index 0s 0.12s;*/
+				transition-property:width,height;
+				transition-duration:0.2s;  
+			}
+			.yq_right_seaver .yq_start_three{
+				/* height: 399px; */
+				/*width: 426px;*/
+				/*background-image: url(../images/seaver/kaifa.png);*/
+				/*transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), z-index 0s 0.12s;*/
+				transition-property:width,height;
+				transition-duration:0.2s; 
+				
+			}
+			.yq_right_seaver .yq_start_four{
+				/* height: 399px; */
+				/*width: 426px;*/
+				/*transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), z-index 0s 0.12s;*/
+				transition-property:width,height;
+				transition-duration:0.2s; 
+				/*background-image: url(../images/seaver/yunwei.png);*/
+			}
+			.yq_right_seaver .yq_start{
+				height: 399px; 
+				/*width: 426px;*/
+				/*background-image: url(../images/seaver/fuwu.png);*/
+			}
+		
+			.yq_right_seaver .yq_start_one,.yq_right_seaver .yq_start_two,.yq_right_seaver .yq_start_three,.yq_right_seaver .yq_start_four{
+				width: 35.76345747002922%;
+			}
+			.yq_right_seaver .yq_right_border{
+				 /*height: 390px; 
+				border: 2px #0085d0 solid;
+				border-radius: 4px;
+				box-sizing: border-box;*/
+			}
+			/*流程页面------------------------*/
+			@keyframes jianxian{
+			from{
+				opacity: 0;
+			}
+			to{
+				opacity: 1;
+			}
+		}
+		/*@-ms-keyframes jianxian{
+			from{
+				opacity: 0;
+			}
+			to{
+				opacity: 1;
+			}
+		}*/
+		/*.yq_right_order{
+			height: 650px;
+			box-shadow: 4px 4px 8px rgba(0,0,0,0.16);
+    		border-radius: 2px;
+		}*/
+		
+			.yq_right_show_login{
+				/*height: 588px;*/
+				padding: 108px 0px 115px;
+				box-sizing: border-box;
+				font-size: 0;
+				display: none;
+				margin-right: auto;
+				margin-left: auto;
+				max-width: 1208px;
+			}
+			
+			.yq_show_one{
+				float: left;
+				/* height: 365px;
+				width: 240px; */
+				text-align: center;
+				position: relative;
+				/*opacity: 0;*/
+				transform: scale(0.1);
+				/*\9\0transform: scale(1);*/
+			}
+			.yq_jiantou3{
+				position: absolute;
+				top: 83px;
+				/*left: 200px;*/
+				left:120.4819277108434%;
+				margin-top: -13px;
+				transform: scale(0.1);
+				
+			}
+			.yq_show_img{
+				transform: scale(0.1);
+			}
+			@media screen\0 {
+				.yq_show_one,.yq_show_img,.yq_jiantou3 { 
+				transform: scale(1);
+				 }
+				 }
+				 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				 	.yq_show_one,.yq_show_img,.yq_jiantou3{ 
+				transform: scale(0.1);
+				 }
+				 	}
+			.yq_show_one p{
+				font-size: 18px;
+				color: #FFFFFF;
+				padding-top: 20px;
+				padding-bottom: 10px;
+			}
+			.show_pad{
+				padding-top: 161px;
+			}
+			.yq_show_one .yq_jiantou1{
+				position: absolute;
+				top: 220px;
+				left: 45%;
+				/*opacity: 0;*/
+				/*transform: scale(0.1);*/
+				
+			}
+			.yq_show_one .yq_jiantou2{
+				position: absolute;
+				top: 20px;
+				left: 40%;
+				/*opacity: 0;*/
+				/*transform: scale(0.1);*/
+				
+			}
+			.one{
+				animation: scale 1s 1;
+				animation-fill-mode:forwards;
+			}
+			.two{
+				/*animation: scale 1s 0.5s 1;
+				animation-fill-mode:forwards;*/
+				/*-ms-animation: jianxian 1s 0.5s 1;
+				-ms-animation-fill-mode:forwards;*/
+				
+			}
+			.three{
+				animation: scale 1s 0.2s 1;
+				animation-fill-mode:forwards;
+			}
+			.four{
+				/*animation: scale 1s 1.5s 1;
+				animation-fill-mode:forwards;*/
+			}
+			.five{
+				animation: scale 1s 0.4s 1;
+				animation-fill-mode:forwards;
+			}
+			.six{
+				/*animation: scale 1s 2.5s 1;
+				animation-fill-mode:forwards;*/
+			}
+			.seven{
+				animation: scale 1s 0.6s 1;
+				animation-fill-mode:forwards;
+			}
+			.eight{
+				/*animation: scale 1s 3.5s 1;
+				animation-fill-mode:forwards;*/
+			}
+			.nine{
+				animation: scale 1s 0.8s 1;
+				animation-fill-mode:forwards;
+			}
+			
+			/*资源页面*/
+			.yq_right_show_resource,.yq_right_show_shuju{
+				/*height: 588px;*/
+				/*background: yellow;*/
+				padding: 178px 0px;
+				font-size: 0;
+				width: 94%;
+				max-width: 1208px;
+				box-sizing: border-box;
+				display: none;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.yq_show_two p{
+				font-size: 18px;
+				color: #FFFFFF;
+				/*line-height: 38px;*/
+				padding-top: 20px;
+				float: left;
+				width: 100%;
+			}
+			.yq_show_two{
+				/*width: 166px;*/
+				text-align: center;
+				float: left;
+				/*margin-right: 157px;*/
+				margin-right: 13.85662812407874%;
+				position: relative;
+				/*opacity: 0;*/
+			}
+			.mg_0{
+				margin-right: 0px;
+			}
+			
+			/*开发流程*/
+			.yq_right_show_kaifa{
+				padding: 4.45966677369867% 0px 2.5677334189% 4.45966677369867%;
+				box-sizing: border-box;
+				position: relative;
+				z-index: 1;
+				display: none;
+			}
+			.yq_content{
+				height: 70px;
+				margin-bottom: 33px;
+				margin-left: -2px;
+				
+			}
+			.yq_text_left,.yq_kaifa_icon,.yq_text_right,.yq_jiantou5{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.yq_text_left{
+				/*width: 295px;*/
+				width: 21%;
+				font-size: 18px;
+				color: #FFFFFF;
+			}
+			.yq_dian{
+				display: inline-block;
+				vertical-align: bottom;
+				/*margin-right: 20px;*/
+				margin-right: 7.13063320022818px;
+			}
+			.yq_text_right{
+				font-size: 14px;
+				color: #888B9B;
+				width: 56px;
+				/*width: 4.99482678654251%;*/
+				margin-left: 12px;
+				margin-right: 12px;
+			}
+			.yq_jiantou5{
+				margin-right: 18px;
+			/* 	margin-right: 1.53693773694457%;
+			width:0.93923972813279%; */
+			}
+			.yq_order_line{
+				height: 515px;
+				width: 4px;
+				background: rgba(255,255,255,0.2);
+				position: absolute;
+				top: 40px;
+				left: 4.95853637684876%;
+				z-index: -1;
+				border-radius: 4px;
+			}
+			.block{
+				display: block;
+			}
+			.yq_right_nav li{
+				cursor: pointer;
+			}
+			
+			
+			/*tab5*/
+			.yq_right1{
+				padding: 2%;
+				padding-right: 0;
+			}
+			.yq_right_index  .yq_right1{
+			background-image: url(../images/一站式服务/bg.png);
+			padding: 0px;
+			box-sizing: border-box;
+			}
+			 .yq_right1 h1{
+				font-size: 22px;
+				color: #FFFFFF;
+				padding-left: 13px;
+				border-left: #0085d0 2px solid;
+				margin-bottom: 82px;
+			}
+			 .yq_right1 ul{
+				/*border-bottom: 1px #40455B solid;*/
+				box-sizing: border-box;
+			}
+			.yq_right1 .slideTxtBox .clear:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			 .yq_right1 ul li{
+				/*padding: 0px 8px 8px 8px;*/
+				width: 87px;
+				text-align: center;
+				/*padding-bottom: 8px;*/
+				font-size: 18px;
+				color: #888b9b;
+				float: left;
+				list-style: none;
+				margin-right: 62px;
+			}
+			.yq_right_cm .yq_right1 ul .on{
+				border-bottom: 4px solid #0085D0;
+				color: #FFFFFF;
+				font-weight: bold;
+				color: white;
+				text-decoration: none;
+				display: block;
+			}
+			 .yq_com_img{
+				margin-top: 30px;
+			}
+			 .yq_com_img img{
+				/* margin-right: 20px;*/
+				/*max-width: 280px; */
+				margin-right: 1.17439812096301%;
+				width: 23.39181286549708%;
+				border: 1px solid #aeb0bb;
+				box-sizing: border-box;
+			}
+
+			@media screen and(max-width: 1024){
+				 .yq_com_img img{
+					margin-right: 1.63800163800164%;
+					width: 17%;
+				}
+			}
+			 .yq_com_img .mg_0{
+				margin-right: 0px;
+			}
+			 .yq_right1 a{
+				color: #888b9b;
+				font-size: 18px;
+				text-decoration: none;
+			}
+			
+			.yq_right_cm .yq_right1{
+				height: 480px;
+			}
+			
+			.yq_right_cm .yq_right1 .slideTxtBox .hd {
+			    border-bottom: 1px #40455B solid;
+			    box-sizing: border-box;
+			    height: 32px;
+			}
+			
+			
+			.yq_right1 .hd .clear li {
+			    /* padding: 0px 8px 8px 8px; */
+			    width: 87px;
+			    text-align: center;
+			    /* padding-bottom: 8px; */
+			    font-size: 18px;
+			    color: #888b9b;
+			    float: left;
+			    list-style: none;
+			    margin-right: 62px;
+			}
+			/*添加左右箭头*/
+			.slideTxtBox1 .prev, .slideTxtBox1 .next{
+				position: absolute;
+			    /*left: 3%;*/
+			    top: 50%;
+			    margin-top: -25px;
+			    display: block;
+			    width: 74px;
+			    height: 74px;
+			    /*background: url(../images/slider-arrow.png) -110px 5px no-repeat;*/
+			    filter: alpha(opacity=50);
+			    opacity: 0.5;
+			    background: yellow;
+			}
+			.slideTxtBox1 .prev{
+				left: 20px;
+				background: url(../images/index/ic_arrow_left.png);
+			}
+			.slideTxtBox1 .next{
+				right: 20px;
+				background: url(../images/index/ic_arrow_right.png);
+				
+			}
+			.clearfix:after{ 
+				content:""; 
+				display:block; 
+				height:0; 
+				line-height:0; 
+				clear:both; 
+				visibility:hidden; 
+			} 
+
+			p.server_function{
+				font-size: 14px;
+				margin-bottom: 15px;
+			}
+			.server_detail{
+				font-size: 12px;
+				color: #999;
+				margin-top: 8px;
+				margin-bottom: 18px;
+			}
+			
+			.yq_right_seaver .yq_start_one,.yq_right_seaver .yq_start_two,.yq_right_seaver .yq_start_three,.yq_right_seaver .yq_start_four{
+				width: 35.76345747002922%;
+			}
+
+			.part4{
+				margin-bottom: 0;
+			}			
+		</style>
+		
+	</head>
+	<body>
+		<!--<div class="yq_header"></div>-->
+		<div class="yq_main">
+			<div class="yq_left">
+				<div class="vis_i tab"><div class="yq_index  public" id="index"></div></div>
+				<div class="tab"><div class="yq_searve public" id="seaver"></div></div>
+				<div class="tab"><div class="yq_order public" id="order"></div></div>
+				<div class="tab"><div class="yq_com  public" id="com"></div></div>
+				<div class="tab"><div class="yq_line"></div></div>
+			</div>
+			<div class="yq_right_index block yq_right" id="indexScreen">
+				<div class="yq_right1">
+				<div class="slideTxtBox1 slideTxtBox">
+				    <div class="bd">
+				        <ul>
+				            <li><img src="../images/index/banner1.png"></li>
+				        </ul>
+				        <ul>
+				            <li><img src="../images/index/banner2.png"></li>
+				        </ul>
+				        <ul>
+				            <li><img src="../images/index/banner3.png"></li>
+				        </ul>
+				        <ul>
+				            <li><img src="../images/index/banner4.png"></li>
+				        </ul>
+				        <ul>
+				            <li><img src="../images/index/banner5.png"></li>
+				        </ul>
+				    </div>
+				    <div class="hd">
+				        <ul>
+				        	<li></li>
+				        	<li></li>
+				        	<li></li>
+				        	<li></li>
+				        	<li></li>
+				        </ul>
+				    </div>
+				    <a class="prev" href="javascript:void(0)"></a>
+				    <a class="next" href="javascript:void(0)"></a>
+				</div>
+				</div>
+				<div class="yq_right2">
+					<div class="attribute">
+						<div class="attr-content">
+							<img src="../images/index/icon_source.png">
+							<div class="attr-right">
+								<h1 class="attr-title">资源丰富</h1>
+								<p class="attr-detail">内容丰富超强承载</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="attribute">
+						<div class="attr-content">
+							<img src="../images/index/icon_safe.png">
+							<div class="attr-right">
+								<h1 class="attr-title">规范安全</h1>
+								<p class="attr-detail">数据脱敏隐私保密</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="attribute">
+						<div class="attr-content">
+							<img src="../images/index/icon_open.png">
+							<div class="attr-right">
+								<h1 class="attr-title">开放合作</h1>
+								<p class="attr-detail">快速构建实现商业智能</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="attribute mg_0">
+						<div class="attr-content">
+							<img src="../images/index/icon_strong.png">
+							<div class="attr-right">
+								<h1 class="attr-title">强大功能</h1>
+								<p class="attr-detail">内容丰富超强承载</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="yq_right_seaver yq_right">
+				<div class="yq_right1">
+					<h1>强大的功能给你一站式服务</h1>
+					<!--<img src="../images/seaver/服务2.png" />-->
+					<div class="yq_right_img yq_searve_one yq_start_one" onmouseover="a()" onmouseout="e()">
+						<div class="server_normal" style="display: none;">
+							<img class="server_icon" src="../images/seaver/icon_server_off.png">
+							<h4>服务</h4>
+							<p class="server_detail">丰富、高性能、可弹性伸缩的服务</p>
+							<p class="server_function">大数据批处理服务</p>
+							<p class="server_function">实时流计算服务</p>
+							<p class="server_function">中间件服务</p>
+							<p class="server_function">存储服务</p>
+						</div>
+						<div class="server_hover">
+							<div class="server_hover_left">
+								<img class="server_icon_hover" src="../images/seaver/icon_server_on.png">
+								<p class="	server_on_title">服务</p>
+								<p class="server_on_detail">
+									丰富、高性能、可弹性伸缩的<br/>
+									服务
+								</p>
+							</div>
+							<div class="server_hover_right">
+								<div class="right_content">
+									<div class="part1">
+										<p class="server_icon_title">大数据批处理服务</p>
+										<p class="server_detail">提供MR/HIVE/SPARK</p>
+									</div>
+									<div class="part2">
+										<p class="server_icon_title">实时流计算服务</p>
+										<p class="server_detail">提供Spark Streaming、Kafka</p>
+									</div>
+									<div class="part3">
+										<p class="server_icon_title">中间件服务</p>
+										<p class="server_detail">提供Redis、FTP等</p>
+									</div>
+									<div class="part4">
+										<p class="server_icon_title">存储服务</p>
+										<p class="server_detail" style="margin-bottom: 0;">提供Hbase、HDFS、DB2等</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="yq_right_img yq_searve_two" onmouseover="b()" onmouseout="e()">
+						<div class="server_normal">
+							<img class="server_icon" src="../images/seaver/icon_data_off.png">
+							<h4>数据</h4>
+							<p class="server_detail">共享、管控、安全</p>
+							<p class="server_function">数据共享</p>
+							<p class="server_function">数据管控</p>
+							<p class="server_function">数据安全</p>
+						</div>
+						<div class="server_hover">
+							<div class="server_hover_left">
+								<img class="server_icon_hover" src="../images/seaver/icon_data_on.png">
+								<p class="	server_on_title">数据</p>
+								<p class="server_on_detail">
+									共享、管控、安全
+								</p>
+							</div>
+							<div class="server_hover_right">
+								<div class="right_content">
+									<div class="part1">
+										<p class="server_icon_title">数据共享</p>
+										<p class="server_detail">支持用户分享数据</p>
+									</div>
+									<div class="part2">
+										<p class="server_icon_title">数据管控</p>
+										<p class="server_detail">
+											数据视图、数据质量管理、血缘图<br>
+											分析、数据资产管理等
+										</p>
+									</div>
+									<div class="part3">
+										<p class="server_icon_title">数据安全</p>
+										<p class="server_detail" style="margin-bottom: 0;">		敏感数据加密、密钥管理、数字安<br>全分发、数字水印等
+										</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="yq_right_img yq_searve_three" onmouseover="c()" onmouseout="e()">
+						<div class="server_normal">
+							<img class="server_icon" src="../images/seaver/icon_develop_off.png">
+							<h4>开发</h4>
+							<p class="server_detail">灵活、自主</p>
+							<p class="server_function">可视化组件开发</p>
+							<p class="server_function">自定义程序开发</p>
+							<p class="server_function">应用部署</p>
+						</div>
+						<div class="server_hover">
+							<div class="server_hover_left">
+								<img class="server_icon_hover" src="../images/seaver/icon_develop_on.png">
+								<p class="	server_on_title">开发</p>
+								<p class="server_on_detail">
+									灵活、自主
+								</p>
+							</div>
+							<div class="server_hover_right">
+								<div class="right_content">
+									<div class="part1">
+										<p class="server_icon_title">可视化组件开发</p>
+										<p class="server_detail">支持使用可视化开发组件，进行借<br/>口开发、数据分析、实时处理、机<br/>
+										器学习等
+										</p>
+									</div>
+									<div class="part2">
+										<p class="server_icon_title">自定义程序开发</p>
+										<p class="server_detail">
+											支持用户自行程序开发和上传
+										</p>
+									</div>
+									<div class="part3" style="margin-bottom: 0;">
+										<p class="server_icon_title">应用部署</p>
+										<p class="server_detail">
+											支持以容器化的方式，管理个性应<br/>用的资源、开发环境、上传发布
+										</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="yq_right_img yq_searve_four border_none" onmouseover="d()" onmouseout="e()">
+						<div class="server_normal">
+							<img class="server_icon" src="../images/seaver/icon_running_off.png">
+							<h4>运维</h4>
+							<p class="server_detail">智能化、可视化</p>
+							<p class="server_function">统一调度</p>
+							<p class="server_function">监控报警</p>
+							<p class="server_function">安全管控</p>
+						</div>
+						<div class="server_hover">
+							<div class="server_hover_left">
+								<img class="server_icon_hover" src="../images/seaver/icon_running_on.png">
+								<p class="	server_on_title">运维</p>
+								<p class="server_on_detail">
+									智能、可视化
+								</p>
+							</div>
+							<div class="server_hover_right">
+								<div class="right_content">
+									<div class="part1">
+										<p class="server_icon_title">统一调度</p>
+										<p class="server_detail">可视化统一调度运维</p>
+									</div>
+									<div class="part2">
+										<p class="server_icon_title">监控报警</p>
+										<p class="server_detail">
+											智能、实时监控、多种警告方式
+										</p>
+									</div>
+									<div class="part3">
+										<p class="server_icon_title">数据安全</p>
+										<p class="server_detail" style="margin-bottom: 0;">
+											文件加密、权限监控、数据水印安<br>
+											全保障体系
+										</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="yq_right2">
+					<div class="attribute">
+						<div class="attr-content">
+							<img src="../images/index/icon_source.png">
+							<div class="attr-right">
+								<h1 class="attr-title">资源丰富</h1>
+								<p class="attr-detail">内容丰富超强承载</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="attribute">
+						<div class="attr-content">
+							<img src="../images/index/icon_safe.png">
+							<div class="attr-right">
+								<h1 class="attr-title">规范安全</h1>
+								<p class="attr-detail">数据脱敏隐私保密</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="attribute">
+						<div class="attr-content">
+							<img src="../images/index/icon_open.png">
+							<div class="attr-right">
+								<h1 class="attr-title">开放合作</h1>
+								<p class="attr-detail">快速构建实现商业智能</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="attribute mg_0">
+						<div class="attr-content">
+							<img src="../images/index/icon_strong.png">
+							<div class="attr-right">
+								<h1 class="attr-title">强大功能</h1>
+								<p class="attr-detail">内容丰富超强承载</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="yq_right_order yq_right">
+				<div class="yq_right_nav yq_one">
+					<ul>
+						<li><a class="yq_a_com vis" id="login">注册登陆流程</a></li>
+						<li><a class="yq_a_com" id="resource">资源申请流程</a></li>
+						<li><a class="yq_a_com" id="shuju">数据申请流程</a></li>
+						<li><a class="yq_a_com" id="kaifa">开发流程</a></li>
+					</ul>
+				</div>
+				<div class="yq_right_show_login block">
+					<div class="yq_show_one one">
+						<img src="../images/order/icon_zhuce.png" />
+						<p>注册4A账号</p>
+						<img class="yq_jiantou1 two" src="../images/order/jiantou1.png" />
+					</div>
+					<div class="yq_show_one three show_pad">
+						<img src="../images/order/icon_quanxian.png" />
+						<p>申请访问权限</p>
+						<img class="yq_jiantou2 four" src="../images/order/jiantou2.png" />
+					</div>
+					<div class="yq_show_one five">
+						<img src="../images/order/icon_denglu.png" />
+						<p>登录</p>
+						<img class="yq_jiantou1 six" src="../images/order/jiantou1.png" />
+					</div>
+					<div class="yq_show_one show_pad seven">
+						<img src="../images/order/icon_tongyi.png" />
+						<p>大数据平台统一门户</p>
+						<img class="yq_jiantou2 eight" src="../images/order/jiantou2.png" />
+					</div>
+					<div class="yq_show_one nine">
+						<img src="../images/order/icon_tiaozhuan.png" />
+						<p>跳转paas平台</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="yq_right_show_resource">
+					<div class="yq_show_two">
+						<img class="yq_show_img pingyione" src="../images/order/icon_ziyuan.png" />
+						<p>通过AMS申请资源</p>
+						<img class="yq_jiantou3 pingyione" src="../images/order/jiantou3.png" />
+					</div>
+					<div class="yq_show_two">
+						<img class="yq_show_img pingyitwo" src="../images/order/icon_shenpi.png" />
+						<p>上级租户管理员审批</p>
+						<img class="yq_jiantou3 pingyione" src="../images/order/jiantou3.png" />
+					</div>
+					<div class="yq_show_two">
+						<img class="yq_show_img pingyithree" src="../images/order/icon_PaaSbangding.png" />
+						<p>PaaS平台绑定角色-获取资源</p>
+						<img class="yq_jiantou3 pingyione" src="../images/order/jiantou3.png" />
+						
+					</div>
+					<div class="yq_show_two mg_0">
+						<img class="yq_show_img pingyifour" src="../images/order/icon_tiaozheng.png" />
+						<p>资源调整</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="yq_right_show_shuju">
+					<div class="yq_show_two">
+						<img class="yq_show_img pingyione" src="../images/order/icon_PaaSchazhao.png" />
+						<p>PaaS平台查找数据</p>
+						<img class="yq_jiantou3 pingyione" src="../images/order/jiantou3.png" />
+					</div>
+					<div class="yq_show_two">
+						<img class="yq_show_img pingyitwo" src="../images/order/icon_xianxia.png" />
+						<p>线下审批流程</p>
+						<img class="yq_jiantou3 pingyione" src="../images/order/jiantou3.png" />
+					</div>
+					<div class="yq_show_two">
+						<img class="yq_show_img pingyithree" src="../images/order/icon_PaaSshenqing.png" />
+						<p>PaaS平台申请数据-访问权限</p>
+						<img class="yq_jiantou3 pingyione" src="../images/order/jiantou3.png" />
+						
+					</div>
+					<div class="yq_show_two mg_0">
+						<img class="yq_show_img pingyifour" src="../images/order/icon_fuquan.png" />
+						<p>审批、赋权</p>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="yq_right_show_kaifa">
+					<div class="yq_content">
+						<span class="yq_text_left"><img class="yq_dian" src="../images/order/dian1.png" />接入流程</span>
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_chuangjianyuan.png" />
+						<span class="yq_text_right">创建接口元数据</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_chuangjian-moxing.png" />
+						<span class="yq_text_right">创建接口数据模型</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_jiekou-kaifa.png" />
+						<span class="yq_text_right">接口程序开发</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_shujutansuo.png" />
+						<span class="yq_text_right">数据探索</span>
+					</div>
+					<div class="yq_content">
+						<span class="yq_text_left"><img class="yq_dian" src="../images/order/dian2.png" />数据模型开发流程</span>
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_chuangjian-moxing2.png" />
+						<span class="yq_text_right">创建数据模型</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_gongxiang-shuju.png" />
+						<span class="yq_text_right">申请共享数据</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_huizong-chuli.png" />
+						<span class="yq_text_right">数据汇总处理</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_shujuyingyong.png" />
+						<span class="yq_text_right">数据应用</span>
+					</div>
+					<div class="yq_content">
+						<span class="yq_text_left"><img class="yq_dian" src="../images/order/dian3.png" />指标开发流程</span>
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_chuangjianzhibiao.png" />
+						<span class="yq_text_right">创建指标</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_zhibiaokaifa.png" />
+						<span class="yq_text_right">指标开发</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_zhibiaochakan.png" />
+						<span class="yq_text_right">指标查看</span>
+					</div>
+					<div class="yq_content">
+						<span class="yq_text_left"><img class="yq_dian" src="../images/order/dian4.png" />OpenAPI开发流程</span>
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_APIfengzhuang-kaifa.png" />
+						<span class="yq_text_right">API封装开发</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_APIfabu-shenpi.png" />
+						<span class="yq_text_right">API发布审批</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_APIdingyue.png" />
+						<span class="yq_text_right">API订阅</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_APIdingyue-shenpi.png" />
+						<span class="yq_text_right">订阅审批</span>
+					</div>
+					<div class="yq_content">
+						<span class="yq_text_left"><img class="yq_dian" src="../images/order/dian5.png" />应用开发流程</span>
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_shujuyinyong.png" />
+						<span class="yq_text_right">数据引用</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_yingyongzhizuo.png" />
+						<span class="yq_text_right">应用制作</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_yingyongshenq.png" />
+						<span class="yq_text_right">应用申请</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_yingyongbushu.png" />
+						<span class="yq_text_right">应用部署</span>
+						<img class="yq_jiantou5" src="../images/order/jiantou4.png" />
+						<img class="yq_kaifa_icon" src="../images/order/kaifa/icon_yingyongfabu.png" />
+						<span class="yq_text_right">应用发布</span>
+					</div>
+					<div class="yq_order_line"></div>
+				</div>
+			</div>
+			<!--tab5-->
+			<div class="yq_right yq_right_cm">
+				<div class="yq_right1">
+					<h1>高效协同快速构建商业实现</h1>
+					<div class="slideTxtBox2 slideTxtBox">
+						<div class="hd">
+					        <ul class="clear">
+								<li><a>公共安全</a></li>
+								<li><a>智慧旅游</a></li>
+								<li><a>交通出行</a></li>
+								<li><a>商业运行</a></li>
+							</ul>
+					    </div>
+					<div class="bd">
+						    <div class="yq_com_img swiper-slide">
+								<img src="../images/com/anquan1.png">
+								<img src="../images/com/anquan2.png">
+								<img src="../images/com/anquan3.png">
+								<img class="mg_0" src="../images/com/anquan4.png">
+							</div>
+							<div class="yq_com_img swiper-slide">
+								<img src="../images/com/lvyou1.png">
+								<img src="../images/com/lvyou2.png">
+								<img src="../images/com/lvyou3.png">
+								<img class="mg_0" src="../images/com/lvyou4.png">
+							</div>
+							<div class="yq_com_img swiper-slide">
+								<img src="../images/com/jiaotong1.png">
+								<img src="../images/com/jiaotong2.png">
+								<img src="../images/com/jiaotong3.png">
+								<img class="mg_0" src="../images/com/jiaotong4.png">
+							</div>
+							<div class="yq_com_img swiper-slide">
+								<img src="../images/com/yunying1.png">
+								<img src="../images/com/yunying2.png">
+								<img src="../images/com/yunying3.png">
+								<img class="mg_0" src="../images/com/yunying4.png">
+							</div>
+					</div>
+					</div>
+				</div>
+				<div class="yq_right2">
+					<div class="attribute">
+						<div class="attr-content">
+							<img src="../images/index/icon_source.png">
+							<div class="attr-right">
+								<h1 class="attr-title">资源丰富</h1>
+								<p class="attr-detail">内容丰富超强承载</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="attribute">
+						<div class="attr-content">
+							<img src="../images/index/icon_safe.png">
+							<div class="attr-right">
+								<h1 class="attr-title">规范安全</h1>
+								<p class="attr-detail">数据脱敏隐私保密</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="attribute">
+						<div class="attr-content">
+							<img src="../images/index/icon_open.png">
+							<div class="attr-right">
+								<h1 class="attr-title">开放合作</h1>
+								<p class="attr-detail">快速构建实现商业智能</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="attribute mg_0">
+						<div class="attr-content">
+							<img src="../images/index/icon_strong.png">
+							<div class="attr-right">
+								<h1 class="attr-title">强大功能</h1>
+								<p class="attr-detail">内容丰富超强承载</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="../js/index.js"></script>
+	</body>
+</html>

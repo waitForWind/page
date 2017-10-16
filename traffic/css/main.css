@@ -1,0 +1,477 @@
+body,ul,li,p,th,td{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+button,input{
+	font-size: 100%;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	min-width: 1000px;
+}
+/*字体重置 */
+body,input,button{
+	font:12px/1.5em "Microsoft YaHei",Arial;
+	color:#4c4c4c;
+}
+
+.nav a:visited{
+	color:#4c4c4c;
+}
+
+.clearfix:before,.clearfix:after{
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.clearfix:after{
+	clear: both;
+}
+.header{
+	overflow: hidden;
+	height: 50px;
+	background: #0085D0;
+	line-height: 50px;
+	paddng-left: 20px;
+	padding-right: 3.294%;
+}
+h2.title{
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: normal;
+	margin-left: 10px;
+}
+.logo{
+	float: left;
+	margin-top: -2px;
+	margin-left: 15px;
+}
+.logoImg{
+	vertical-align: middle;
+}
+.logoName{
+	font-size: 18px;
+	color: white;
+	vertical-align: middle;
+}
+.userModel{
+	float: right;
+}
+.user{
+	margin-right: 20px;
+	display: inline-block;
+}
+.welcome,.loginout{
+	color: white;
+	vertical-align: middle;
+}
+.usericon{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.main{
+	width: 100%;
+	// margin: 0px;
+	// padding:0px;
+	overflow: hidden;
+}
+.nav{
+	width:12%;
+	border: 1px solid #e5e5e5;
+	border-left: none;
+	border-top: none;
+	// height: 800px;
+	// display: inline-block;
+	float: left;
+
+}
+.nav li a{
+	padding:10px 0 10px 20px;
+	cursor: pointer;
+	display: block;
+}
+.nav li:hover{
+	background: #cde9f6;
+}
+
+.nav img{
+	vertical-align: middle;
+}
+.nav .ico{
+	margin-right: 20px;
+}
+.navText{
+	font-size: 15px;
+	vertical-align: bottom;
+}
+.content{
+	border-radius: 2px;
+	border: 1px solid #e5e5e5;
+	width: 85%;
+	// height: 500px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.icoSearch{
+	margin-top: 5.5px;
+	margin-left: 10px;
+	margin-right: 15px;
+}
+.searchBox{
+	background: #eeeeec;
+	height: 46px;
+	border-bottom: 1px solid #ccc; 
+	// line-height: 46px;
+}
+
+div.query{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+.item{
+	float: left;
+}
+
+.nav li.activeNav{
+	background:#0496e8;
+	color: white;
+}
+.nav li.activeNav a{
+	color: white;
+}
+.item input{
+	height: 14px;
+	line-height: 14px;
+	border-radius: 4px;
+	border:1px solid #b4dbf1;
+	margin-left: 10px;
+	width: 90px;
+	padding: 6px;
+	font-size: 14px;
+	// height: 24px;
+}
+
+.item{
+	// background: red;
+	margin-left: 20px;
+}
+
+.startInput{
+	margin-left: 0;
+}
+
+.btn{
+	background: #53afe3;
+	border:0;
+	border-radius: 2px;
+	width: 70px;
+	height: 26px;
+	text-align: center;
+	color: white;
+	margin-left: 22px;
+	cursor: pointer;
+	// line-height: 24px;
+}
+.btn:hover{
+	background: #0683ca;
+}
+.caption{
+	height: 48px;
+}
+.btnGroup{
+	float: right;
+	margin-right: 10px;
+	margin-top: 14px;
+}
+
+.btnOut{
+	margin-left: 10px;
+}
+
+.table thead{
+	background: #eeeeec;
+	color: black;
+	text-align: center;
+
+}
+.table thead td{
+	height: 44px;
+}
+.table tbody td{
+	height: 34px;
+	padding-left: 5px;
+}
+.table{
+	font-size: 14px;
+	width: 100.04%;
+}
+.table td{
+	border: 1px solid #e5e5e5;
+}
+td.firstCell{
+	border-left: none;
+}
+td.lastCell{
+	border-right: none;
+}
+.page{
+	float: right;
+}
+
+.page li{
+	float: left;
+}
+
+.pageModel{
+	width: 85%;
+	// height: 500px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 20px;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	// float: right;
+	// margin-right:2.2%; 
+	
+}
+.showCount{
+	font-size: 14px;
+}
+.count,.pageNum{
+	// background: red;
+	padding-left: 6px;
+	padding-right: 6px;
+	// display: inline-block; 
+}
+ul.page{
+	border:1px solid #bcbcbc;
+	// height: 26px;
+	text-align: center;
+}
+ul.page li{
+	font-size: 14px;
+	vertical-align: middle;
+	// height: 100%;
+	// line-height: 24px;
+	padding: 4px 10px;
+	border-right: 1px solid #dfdfdf;
+	color: #6dc4d5;
+}
+.page li:hover{
+	cursor: default;
+}
+ul.page .disable{
+ color: #a2a2a2;
+ border: none;
+}
+
+ul.page .able{
+	color: #0085d0;
+	border: none;
+}
+
+ul.page .firstPage{
+	border-right: 1px solid #dfdfdf;
+}
+ul.page li.active{
+	background: #6dc4d5;
+	color: white;
+}
+
+.btnDownload,.btnAdd{
+	margin-left: 10px;
+}
+.tableDuty{
+
+} 
+.content2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.tableDuty td,.tableRecord td,.tableD td{
+	height: 30px!important;
+}
+.tableDuty thead td,.tableRecord thead td,.tableD thead td{
+	height: 40px!important;
+}
+.modify,.del{
+	display: inline-block;
+	vertical-align: middle;
+	color: #6dc4d5;
+	cursor: pointer;
+}
+.modify:hover{
+	color: #0085D0;
+}
+.del:hover{
+	color: #0085D0;
+}
+td.option{
+	width: 25%;
+	text-align: center;
+}
+.noLeftBorder{
+	border-left:none!important;
+}
+
+.noBottomBorder{
+	border-bottom: none!important;
+}
+.workID{
+	width: 15%;
+}
+td.name{
+	width: 15%;
+}
+td.code{
+	width: 20%;
+}
+td.optType{
+	width: 12%;
+}
+.tableD .note{
+	width: 20%;
+}
+
+.table tr td{
+	text-align: center;
+}
+.window{
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	// position:absolute;
+	filter: Alpha(opacity=50);
+	background-image: url(../img/popBG.png);
+	display: none;
+	position: fixed;
+}
+.dutyWindow{
+
+}
+.popBox{
+	opacity: 1;
+	position:absolute;
+	width:600px; 
+	height:340px; 
+	left:50%; 
+	top:50%; 
+	margin:-200px 0 0 -200px;
+	background: white;
+	overflow: hidden;
+}
+.popDuty{
+	opacity: 1;
+	position:absolute;
+	width:600px; 
+	left:50%; 
+	top:50%; 
+	margin:-200px 0 0 -200px;
+	background: white;
+	// overflow: hidden;
+}
+.popTop{
+	width: 100%;
+	height: 68px;
+	background: #eae9e9;
+	// border-bottom: #b2b2b2;
+	// text-align: center;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.popTitle{
+	margin: 0;
+	font-size: 18px;
+	font-weight: normal;
+	color:#4c4c4c;
+	margin-top: 25px;
+	margin-left: 20px;
+	display: inline-block;
+}
+
+
+.popBox label{
+	width: 150px;
+	text-align: right;
+	display: inline-block;
+}
+
+.popBox input{
+	width: 315px;
+	border: 1px solid #d3d3d3;
+}
+
+.item2,.item3{
+	margin-top: 40px;
+}
+
+.popContent{
+	margin-top: 24px;
+	margin-bottom: 30px;
+}
+.popBottom{
+	height: 52px;
+	background:#eae9e9;
+	border-top: 1px solid #d3d3d3; 
+}
+
+.btnSave{
+	width: 70px;
+	height: 30px;
+	float: right;
+	margin-right: 20px;
+	vertical-align: middle;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.icoClose{
+	float: right;
+	margin-right: 30px;
+	// vertical-align: middle;
+	margin-top: 25px;
+	cursor: pointer;
+}
+.popTable {
+	width: 90%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.popTable td{
+	border: 1px solid #e8e8e8;
+	text-align: center;
+	height: 30px;
+	font-size: 12px;
+}
+
+.popTable thead td{
+	color: black;font-weight: lighter;
+	font-size: 14px;
+}
+
+.tips{
+	color: red;
+	font-size: 12px;
+	margin: 10px 0 10px 10px;
+}
+

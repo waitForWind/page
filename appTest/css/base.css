@@ -1,0 +1,1003 @@
+body,ul,li,p,th,td,h2{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+img{
+	border: none;
+}
+a{
+	color:#4c4c4c;
+	text-decoration: none;
+}
+button{
+	border: none;
+	background: transparent;
+}
+body{
+	min-width: 1000px;
+}
+/*字体重置 */
+body,input,button{
+	font:12px/1.5em "Microsoft YaHei",Arial;
+	color:#4c4c4c;
+}
+.clearfix:before,.clearfix:after{
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.clearfix:after{
+	clear: both;
+}
+
+.header{
+	overflow: hidden;
+	height: 50px;
+	background: #0085D0;
+	line-height: 50px;
+	paddng-left: 20px;
+	padding-right: 3.294%;
+}
+h2.title{
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: normal;
+	margin-left: 10px;
+}
+.logo{
+	float: left;
+	margin-top: -2px;
+	margin-left: 15px;
+}
+.logoImg{
+	vertical-align: middle;
+}
+.logoName{
+	font-size: 18px;
+	color: white;
+	vertical-align: middle;
+}
+.userModel{
+	float: right;
+}
+.user{
+	margin-right: 20px;
+	display: inline-block;
+}
+.welcome,.loginout{
+	color: white;
+	vertical-align: middle;
+}
+.icoToggle{
+	margin-left: 19%;
+	vertical-align: middle;
+}
+.usericon{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.nav{
+	// position: fixed;
+	width:13%;
+	border: 1px solid #e5e5e5;
+	height: 600px;
+	float: left;
+}
+
+.nav li a{
+	padding:10px 0 10px 20px;
+	cursor: pointer;
+	display: block;
+}
+.subnav{
+	padding:10px 0 10px 20px;
+}
+.nav img{
+	vertical-align: middle;
+}
+.nav .ico{
+	width:30px;
+	display: inline-block;
+}
+
+.nav li:hover{
+	// background: #cde9f6;
+	background: #f0f0f0;
+}
+
+.content{
+	width: 85%;
+	// height: 500px;
+	float: right;
+	margin-right: 0.8%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.selectText{
+	color: #0085d0;
+	font-size: 14px;
+	display: inline-block;
+	// vertical-align: middle;
+	margin-top: 3px;
+}
+
+.select{
+	display: inline-block;
+	width: 70px;
+	height: 22px;
+	border: 1px solid #eaf0f7;
+	text-align: center;
+	position: relative;
+}
+
+.select .toggle{
+	margin-left: 10px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+
+.item{
+	width: 100%;
+	padding-left: 10px;
+	height: 24px;
+	text-align: left;
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 24px;
+	cursor: default;
+}
+
+.item:hover{
+	background: #e8e8e8;
+}
+
+.selectList{
+	overflow: hidden;
+	border: 1px solid #eaf0f7;
+	border-top: none;
+	display: none;
+	position: absolute;
+	background: white;
+}
+
+.selectMonth{
+	width: 50px;
+	margin-left: 10px;
+}
+
+.selectMonth .item{
+	padding-left: 4px;
+}
+
+.btnQuery{
+	color: white;
+	height: 24px;
+	background: #07c719;
+	margin-left: 20px;
+	width: 50px;
+}
+.queryHover{
+	background: #08ab17;
+}
+
+.dataBox{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 20px;
+	text-align: center;
+	padding-top: 15px;
+	height: 185px;
+	width: 47.96623177283193%;
+	border: 1px solid #eaf0f7;
+}
+div.title{
+	width: 66px;
+	height: 24px;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #0085d0;
+	line-height: 24px;
+}
+.sex,.consume,.terminal{
+	margin-left: 1.7%;
+}
+
+.imgAge{
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.ageNote{
+	float: right;
+	margin-right:3.6231884057971%;
+}
+.noteItem{
+	margin-top: 4px;
+	text-align: left;
+}
+.colorBlock{
+	margin-right: 8px;
+	width: 12px;
+	height: 7px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.sexImg{
+	float: left;
+}
+
+.dataContent{
+	display: inline-block;
+}
+
+.sexNum{
+	float: right;
+}
+
+.showNum{
+	color: white;
+	line-height: 36px;
+	font-size: 20px;
+	display: inline-block;
+	width: 80px;
+	height: 36px;
+	vertical-align: middle;
+	float: left;
+	margin-top: 14px;
+	margin-right: 15px;
+}
+
+
+.sexNum{
+	margin-left: 45px;
+}
+
+.jobItem{
+	display: inline-block;
+	margin-right: 7%;
+	color: #888;
+	margin-top: 14px;
+}
+.circle{
+	background-image: url(../img/circle.png);
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	color: #3bdf0e;
+}
+
+.number{
+	font-size: 20px;
+	color: #0085d0;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	// font-style: italic;
+	font-weight: bold;
+}
+.consumeContent{
+	text-align: left;
+	// display: inline-block;
+	margin-left: 10%;
+}
+.consumeItem{
+	margin-top: 14px;
+}
+.consumeItem span{
+	display: inline-block;
+	vertical-align: middle;
+	color: #888;
+}
+
+.progress{
+	height: 10px;
+	border-radius: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.consumePeople{
+	width: 80px;
+	text-align: right;
+}
+
+.place img, .terminal img{
+	margin-top: 10px;
+}
+
+.icoWrapper{
+	display: inline-block;
+	vertical-align: middle;
+	width:30px; 
+}
+.subList{
+	display: none;
+}
+
+.subList a:hover{
+	background: #f0f0f0;
+}
+
+.list1,.list2,.list3{
+	display: block;
+	padding: 10px 0;
+}
+
+.welcomeU{
+	height: 26px;
+	line-height: 26px;
+	border: 1px solid #ebd482;
+	background-color: #feffe5;
+	width: 100%;
+	margin-bottom: 20px;
+	z-index: 100;
+}
+.welText{
+	display: inline-block;
+	margin-left: 10px;
+	color: #d0a10e;
+}
+.icoClose{
+	float: right;
+	margin-right: 15px;
+	margin-top: 8.5px;
+}
+
+.dataContainer{
+	border:1px solid #eaf0f7;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	width: 23.844109%;
+	height: 110px;
+	// margin-left: 0.9708175%;
+	margin-left: 0.95%;
+}
+
+.eachData .title{
+	height: 24px;
+	background: #74cafa;
+	line-height: 24px;
+	color: white;
+	display: block;
+	margin: 0 0 8px;
+
+}
+
+.splite{
+	display: inline-block;
+	width: 1px;
+	background-color: #e5e5e5;
+	height: 48px;
+	margin: 10px 6%;
+	
+}
+
+.dataContainer .line1,.dataContainer .line2{
+	color: 555;
+}
+.dataContainer .line2{
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.tendleft,.tendright{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.dataContainer .line3{
+	font-size: 14px;
+}
+.graphic{
+	border:1px solid #e5e5e5;
+	padding: 30px 0 20px 20px;
+	margin-top: 20px;
+}
+.links{
+	margin-bottom: 33px;
+}
+.linkItem{
+	color: white;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	background:#7dd1f8;
+	margin-right: 1px;
+}
+
+.linkItem:hover{
+	background: #1ea0dd;
+}
+
+.colorHint{
+	width: 20px;
+	height: 3px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.graphyHead{
+	font-size: 14px;
+	color: #333;
+}
+
+div.rect{
+	display: inline-block;
+	vertical-align: top;
+	padding: 1.4px 8px;
+	margin-top: -2.5px;
+
+}
+
+.grayBorder{
+	border:1px solid #e5e5e5;
+}
+
+.cart{
+	border: 5px solid transparent;
+	border-top: 5px solid #888;
+	display: inline-block;
+	position: relative;
+	top: 3px;
+	margin-left: 2px;
+}
+
+.dayTarget,.monthTarget{
+	margin-right: 12px;
+}
+.dayTarget{
+	margin-left: 7.0%;
+}
+
+.monthTarget{
+	margin-left: 3%;
+}
+.ellipse{
+	border-radius: 100px;
+	padding: 2px 12px;
+}
+.structGraphy{
+	padding-left: 20px;
+}
+.structHead{
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+
+#btnMonth{
+	margin-left: 10px;
+	margin-right:12px;
+}
+.absolute,.percent{
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	background: #eeecec;
+	color: #555;
+}
+.blue{
+	background:#0085d0!important;
+	color: white!important;
+} 
+.structHead .blue:hover{
+	background: #07BAEE;
+	color: white;
+}
+.absolute{
+	margin-right: 10px;
+}
+.hintGroup{
+	display: inline-block;
+	vertical-align: top;
+	color: #555;
+	width: 180px;
+	text-align: left;
+}
+.hintColor{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.mingxi{
+	padding: 20px 20px 10px 20px;
+	margin-top: 20px;
+}
+.mingxiTitle{
+	color: black;
+	font-size: 12px;
+	height: 14px;
+	// line-height: 14px;
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+.v-line{
+	width: 3px;
+	height: 14px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -1.8px;
+}
+.mingxiTable{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border:1px solid #e5e5e5;
+}
+.mingxiTable thead{
+	background: #f5f5f5;
+	border-bottom: 1px solid #ccc;
+	
+}
+.mingxiTable thead  td{
+	height: 26px;
+}
+.mingxiTable td{
+	text-align: center;
+	height: 22px;
+	line-height: 22px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.pageModel{
+	margin-top: 16px;
+}
+
+.pageModel div{
+	cursor: default;
+}
+.blueText{
+	color: #2299ec;
+}
+
+ul.page{
+	float: right;
+	cursor: default;
+	margin-right: 2px;
+}
+
+.page li{
+	float: left;
+	padding: 1px 6px;
+}
+
+div.showCount{
+	float: left;
+	margin-left: 2px;
+}
+
+.firstPage,.pre{
+	margin-right: 10px;
+}
+.lastPage,.next{
+	margin-left: 10px;
+}
+
+.pageCode{
+	border:1px solid #e5e5e5;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+ul.page .disable{
+ color: #a2a2a2;
+}
+
+ul.page .able{
+	color: #0085d0;
+}
+
+.vs{
+	padding: 50px 0px 45px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.wangyi,.foxmail{
+	font-size: 16px;
+	color: #888;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.vs img{
+	vertical-align: middle;
+}
+
+.vsImg{
+	margin-left: 65px;
+	margin-right: 65px;
+}
+
+.wangyi img,.foxmail img{
+	margin-right: 20px;
+}
+
+.contrastGraphy{
+	padding: 20px 10px 20px 30px;
+}
+
+.checkItem{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.checkItem img{
+	position: relative;
+	top: 1px;
+}
+.checkText{
+	margin-left: 5px;
+}
+.ellipse2{
+	border-radius: 100px;display: inline-block;vertical-align: middle;padding:1px 5px;
+}
+
+.Hints .colorHint{
+	margin-left:17px;
+	height: 5px;
+	width: 18px;
+}
+
+.zblist{
+	// background: red;
+	border: 1px solid #e5e5e5;
+	background: white;
+	color: #666;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 23px;
+    border-radius: 6px;
+    display: none;
+   
+}
+.zblist>li{
+	 padding-left: 4px;
+}
+.zblist>li:hover{
+	background: #CDE9F6;
+	cursor: default;
+}
+
+.condition{
+	cursor: default;
+}
+
+.rank{
+	text-align: center;
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 25px;
+	border:1px solid #e5e5e5;
+	width: 32.20035778175313%;
+	margin-top: 20px;
+	margin-left: 1%;
+}
+.rankTitle{
+	font-size: 25px;
+	color: #888;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+
+.rankIcon{
+	display: inline-block;
+}
+.rankNum{
+	font-size: 40px;
+	display: inline-block;
+	margin-left: 45px;
+	position: relative;
+	top: -30px;
+	// font-weight: bold;
+}
+
+.ranktable{
+	width: 49.06333630686887%;
+	border-collapse: collapse;
+	cellspacing:0;
+	
+}
+.tableBox{
+	margin-top: 20px;
+}
+.ranktable caption{
+	height: 30px;
+	line-height: 30px;
+	background: #059cf2;
+	color:white;
+}
+.ranktable td{
+	height: 30px;
+	align:center;
+	valign:middle;
+	text-align: center;
+
+}
+
+.tableico{
+	vertical-align: middle;
+}
+
+.cellLine{
+	height: 15px;
+	width: 3px;
+	background: #eaf0f7;
+
+}
+td.tline{
+	width: 4%;
+	padding-left: 10px;
+
+}
+
+div.tableProgress{
+	display: inline-block;
+	border-radius: 100px;
+	background: #eaedef;
+	height: 8px;
+	width: 67%;
+	margin-right: 15px;
+	// vertical-align: middle;
+}
+.subProgress{
+	background: #a4d6f3;
+	height: 100%;
+	border-radius: 100px;
+}
+
+.userCount{
+	width: 64%;
+	text-align: left!important;
+	padding-left: 10px;
+}
+.paiming{
+	width: 6%;
+}
+
+
+.appName{
+	text-align: left!important;
+	padding-left: 15px;
+}
+.tableico{
+	margin-right: 5px;
+}
+.rivalBox{
+	padding: 20px;
+	padding-right: 0px;
+	padding-bottom: 6px;
+	padding-left: 2.4%;
+}
+.rivalLeft{
+	position: relative;
+	margin-right:12px;
+	top: 18px;
+	vertical-align: top;
+
+}
+.rivalLeft,.rivalRight{
+	display: inline-block;
+	// vertical-align: middle;
+	color: #888;
+}
+
+.rivalTips{
+	width:80px;
+	font-size: 23px;
+	margin-top: 5px;
+	display: inline-block;
+	// color: #888;s
+}
+.huanbiB{
+	color: #0085d0;
+}
+.rival{
+	float: left;
+	// width: 20%;
+	// text-align: center;
+}
+
+.rivalLine{
+	width: 1px;
+	height: 102px;
+	// vertical-align: middle;
+	float: left;
+	background: #eaf0f7;
+	margin:0 3.3%;
+}
+.huanbiR{
+	color: #f30919;
+}
+.rivalIco{
+position: relative;
+left: 4px;
+}
+
+.rivalStrip{
+	background: #81c9f2;
+	border-radius: 100px;
+	height: 10px;
+	display: inline-block;
+	// margin:0 5px;
+}
+
+.rivalPercent{
+	width: 140px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.rivalName{
+	width: 30px;
+	display: inline-block;
+}
+.rivalValue{
+	display: inline-block;
+	// background: red;
+	position: relative;
+	top: 15px;
+	
+}
+
+.valueNum{
+	font-size: 25px;
+	margin-top: 15px;
+}
+
+.rivalGraph{
+	margin-top: 20px;
+}
+.rivalItem{
+	float: left;
+	line-height: 30px;
+	height: 30px;
+	padding:0px 10px;
+	cursor: default;
+	
+}
+.rivalItem:hover{
+	background: #f8f6f7;
+}
+.rivalNav{
+	position: relative;
+	background: #f3f1f1;
+}
+#rivalSlider{
+	display: inline-block;
+	background: #0085d0;
+	height: 3px;
+	width: 50px;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	border-radius: 100px;
+}
+.rivalNav .active{
+	background: white;
+}
+.rivalGraph{
+	padding-bottom: 20px;
+}
+
+.rivalImg{
+	margin-left: 20px;
+	width: 91.13584036838066%;
+}
+
+.btnMingxi{
+	background: #07c719;
+	color: white;
+	float: right;
+	margin-left: 20px;
+}
+
+.btnMingxi:hover{
+	background: #049910;
+}
+#shouqi,#zhankai{
+	color: #00A2D0;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	margin-left: 10px;
+	cursor: pointer;
+	float: right;
+}
+
+#zhankai:hover,#shouqi:hover{
+	text-decoration: underline;
+}
+
+.xiala{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.xialaText{
+	color: #0085D0;
+}
+
+ul.users{
+	background: white;
+	border-right: none;
+}
+ul.users li{
+	cursor: default;
+}
+
+.hxSearch{
+	position: relative;
+	z-index: -1;
+}
+
+ul.users li:hover{
+	color: #d0a10e;
+}
+
+.xiala img{
+	position: relative;
+	top: 2px;
+}
+.closeWel{
+	float: right;
+	margin-top: 9.5px;
+	margin-right: 10px;
+}
+
+.users li{
+	padding-left: 20px!important;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+}
+html,body,.nav,.main{
+	height: 100%;
+}
+.appChoice{
+	display: inline-block;
+	position: relative;
+	padding: 10px 0;
+	cursor: default;
+}
+.allApp{
+	position: absolute;
+	left: 0;
+	// top: 0;
+	background: white;
+	border:1px solid #e5e5e5;
+	z-index: 9999;
+	top: 32px;
+}
+
+.allApp li{
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	cursor: default;
+}
+.allApp li:hover{
+	color: #0085D0;
+}

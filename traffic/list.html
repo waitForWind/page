@@ -1,0 +1,573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>交通运输</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/page.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="logo">
+			<img class="logoImg" src="img/logo.png"/>
+		</div>
+		<div class="userModel">
+			<span class="user">
+				<img class="usericon" src="img/ico_user.png"><a href="javascript:;" class="welcome">管理员，欢迎您!</a>
+			</span>
+			<span class="login">
+				<img class="usericon" src="img/ico_loginout.png"><a href="index.html" class="loginout">退出</a>
+			</span>
+		</div>
+	</div>
+	
+	<div class="main">
+
+		<ul class="nav">
+			<li class="monitor" style="clear: both;">
+				<a href="monitor.html"><img class="ico" src="img/ico_monitor.png"><span class="navText" >违规监控</span></a>
+			</li>
+			<li class="duty">
+				<a href="duty.html">
+					<img class="ico" src="img/ico_duty.png"><span class="navText">值班表</span>
+				</a>
+			</li>
+			<li class="list activeNav">
+				<a href="list.html">
+					<img class="ico" src="img/ico_list.png"><span class="navText">白名单</span>
+				</a>
+			</li>
+		</ul>
+		<div class="content">
+			
+			<div class="searchBox">
+				<img class="icoSearch" src="img/ico_search.png" / >
+				<div class="query">
+					<div class="item startInput">
+						<label for="startTime">起始时间:</label>
+						<input id="startTime" />
+					</div>
+					<div class="item">
+						<label for="endTime">结束时间:</label>
+						<input id="endTime"/>
+					</div>
+					<div class="item">
+						<label for="workID">工号:</label>
+						<input id="workID"/>
+					</div>
+					<div class="item">
+						<label for="name">姓名:</label>
+						<input id="name"/>
+					</div>
+					<input class="btnSearch btn" type="button"  value="查询" />
+				</div>
+			</div>
+			<div class="caption clearfix">
+				<h2 class="title">公交驾驶员白名单</h2>
+				<div class="btnGroup">
+					<input class="btn btnIn" type="button" value="白名单导入" />
+					<input class="btn btnDownload" type="button" value="模板下载" />
+					<input class="btn btnAdd" type="button" value="添加" />
+					<input class="btn btnOut" type="button" value="导出" />
+				</div>
+			</div>
+			<table class="table tableDuty">
+				<thead>
+					<tr>
+						<td class="firstCell">全选</td>
+						
+						<td>司机工号</td>
+						<td>司机姓名</td>
+						<td>司机手机号</td>
+						<td>更新时间</td>
+						<td class="lastCell">操作</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="workID">
+							15960
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							11111111111
+						</td>
+						<td>
+							2020:-02-02 22:22
+						</td>
+						<td class="option">
+							<span class="modify">修改</span>
+							<span style="width: 30px;display: inline-block;"></span>
+							<span class="del">删除</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="workID">
+							15960
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							11111111111
+						</td>
+						<td>
+							2020:-02-02 22:22
+						</td>
+						<td class="option">
+							<span class="modify">修改</span>
+							<span style="width: 30px;display: inline-block;"></span>
+							<span class="del">删除</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="workID">
+							15960
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							11111111111
+						</td>
+						<td>
+							2020:-02-02 22:22
+						</td>
+						<td class="option">
+							<span class="modify">修改</span>
+							<span style="width: 30px;display: inline-block;"></span>
+							<span class="del">删除</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="workID">
+							15960
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							11111111111
+						</td>
+						<td>
+							2020:-02-02 22:22
+						</td>
+						<td class="option">
+							<span class="modify">修改</span>
+							<span style="width: 30px;display: inline-block;"></span>
+							<span class="del">删除</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="workID">
+							15960
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							11111111111
+						</td>
+						<td>
+							2020:-02-02 22:22
+						</td>
+						<td class="option">
+							<span class="modify">修改</span>
+							<span style="width: 30px;display: inline-block;"></span>
+							<span class="del">删除</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="workID">
+							15960
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							11111111111
+						</td>
+						<td>
+							2020:-02-02 22:22
+						</td>
+						<td class="option">
+							<span class="modify">修改</span>
+							<span style="width: 30px;display: inline-block;"></span>
+							<span class="del">删除</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="workID">
+							15960
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							11111111111
+						</td>
+						<td>
+							2020:-02-02 22:22
+						</td>
+						<td class="option">
+							<span class="modify">修改</span>
+							<span style="width: 30px;display: inline-block;"></span>
+							<span class="del">删除</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="workID">
+							15960
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							11111111111
+						</td>
+						<td>
+							2020:-02-02 22:22
+						</td>
+						<td class="option">
+							<span class="modify">修改</span>
+							<span style="width: 30px;display: inline-block;"></span>
+							<span class="del">删除</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="workID">
+							15960
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							11111111111
+						</td>
+						<td>
+							2020:-02-02 22:22
+						</td>
+						<td class="option">
+							<span class="modify">修改</span>
+							<span style="width: 30px;display: inline-block;"></span>
+							<span class="del">删除</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="workID">
+							15960
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							11111111111
+						</td>
+						<td>
+							2020:-02-02 22:22
+						</td>
+						<td class="option">
+							<span class="modify">修改</span>
+							<span style="width: 30px;display: inline-block;"></span>
+							<span class="del">删除</span>
+						</td>
+					</tr>
+					
+				</tbody>
+			</table>
+		
+		</div>
+			
+		<!-- 第二个表格 -->
+		<div class="content content2">
+			<div class="searchBox">
+				<img class="icoSearch" src="img/ico_search.png" / >
+				<div class="query">
+					<div class="item startInput">
+						<label for="startTime">起始时间:</label>
+						<input id="startTime" />
+					</div>
+					<div class="item">
+						<label for="endTime">结束时间:</label>
+						<input id="endTime"/>
+					</div>
+					<div class="item">
+						<label for="workID">账号名称:</label>
+						<input id="workID"/>
+					</div>
+					<input class="btnSearch btn" type="button"  value="查询" />
+				</div>
+			</div>
+			<div class="caption clearfix">
+				<h2 class="title">白名单操作记录表</h2>
+				<div class="btnGroup">
+					<input class="btn btnOut" type="button" value="导出" />
+				</div>
+			</div>
+			<table class="table tableRecord">
+				<thead>
+					<tr>
+						<td class="firstCell">全选</td>
+						
+						<td class="time">操作时间</td>
+						<td>账号编码</td>
+						<td>账号名称</td>
+						<td class="optType">操作类型</td>
+						<td class="lastCell">内容</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="time">
+							2017-06-06 03:05
+						</td>
+						<td class="code">
+							5656566
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							删除
+						</td>
+						<td>
+							2017-02-03 18:55 删除了一条记录
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="time">
+							2017-06-06 03:05
+						</td>
+						<td class="code">
+							5656566
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							删除
+						</td>
+						<td>
+							2017-02-03 18:55 删除了一条记录
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="time">
+							2017-06-06 03:05
+						</td>
+						<td class="code">
+							5656566
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							删除
+						</td>
+						<td>
+							2017-02-03 18:55 删除了一条记录
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="time">
+							2017-06-06 03:05
+						</td>
+						<td class="code">
+							5656566
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							删除
+						</td>
+						<td>
+							2017-02-03 18:55 删除了一条记录
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="time">
+							2017-06-06 03:05
+						</td>
+						<td class="code">
+							5656566
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							删除
+						</td>
+						<td>
+							2017-02-03 18:55 删除了一条记录
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="time">
+							2017-06-06 03:05
+						</td>
+						<td class="code">
+							5656566
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							删除
+						</td>
+						<td>
+							2017-02-03 18:55 删除了一条记录
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="time">
+							2017-06-06 03:05
+						</td>
+						<td class="code">
+							5656566
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							删除
+						</td>
+						<td>
+							2017-02-03 18:55 删除了一条记录
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="time">
+							2017-06-06 03:05
+						</td>
+						<td class="code">
+							5656566
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							删除
+						</td>
+						<td>
+							2017-02-03 18:55 删除了一条记录
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="time">
+							2017-06-06 03:05
+						</td>
+						<td class="code">
+							5656566
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							删除
+						</td>
+						<td>
+							2017-02-03 18:55 删除了一条记录
+						</td>
+					</tr>
+					<tr>
+						<td class="firstCell"><input type="checkbox" name="" id="" /></td>
+						<td class="time">
+							2017-06-06 03:05
+						</td>
+						<td class="code">
+							5656566
+						</td>
+						<td class="name">
+							王大明
+						</td>
+						<td>
+							删除
+						</td>
+						<td>
+							2017-02-03 18:55 删除了一条记录
+						</td>
+					</tr>
+
+				</tbody>
+			</table>	
+		</div>
+	
+	</div>
+	<div class="window modWindow">
+		<div class="popBox">
+			<div class="popTop">
+				<span class="popTitle">编辑驾驶员名单</span>
+				<img  class="icoClose" src="./img/error.png">
+				
+			</div>
+			<div class="popContent clearfix">
+				<div class="item item1">
+					<label for="popWorkID">司机工号：</label>
+					<input type="text" name="" id="popWorkID" />
+				</div>
+				<div class="item item2">
+					<label for="popName">司机姓名：</label>
+					<input type="text" name="" id="popName" />
+				</div>
+				<div class="item item3">
+					<label for="popTel">司机手机号：</label>
+					<input type="text" name="" id="popTel" />
+				</div>
+			</div>
+			<div class="popBottom">
+				<button class="btn btnSave">保存</button>
+			</div>
+		</div>
+	</div>
+	<div class="window addWindow">
+		<div class="popBox">
+			<div class="popTop">
+				<span class="popTitle">添加驾驶员名单</span>
+				<img  class="icoClose" src="./img/error.png">
+				
+			</div>
+			<div class="popContent clearfix">
+				<div class="item item1">
+					<label for="popWorkID">司机工号：</label>
+					<input type="text" name="" id="popWorkID" />
+				</div>
+				<div class="item item2">
+					<label for="popName">司机姓名：</label>
+					<input type="text" name="" id="popName" />
+				</div>
+				<div class="item item3">
+					<label for="popTel">司机手机号：</label>
+					<input type="text" name="" id="popTel" />
+				</div>
+			</div>
+			<div class="popBottom">
+				<button class="btn btnSave">添加</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

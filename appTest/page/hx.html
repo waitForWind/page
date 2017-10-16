@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/list.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.subList').show();
+		});
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img class="logoImg" src="../img/logo.png"/> <span class="logoName">广东移动</span>
+		</div>
+		<div class="userModel">
+			<span class="user">
+				<img class="usericon" src="../img/ico_user.png"><a href="javascript:;" class="welcome">管理员，欢迎您!</a>
+			</span>
+			<span class="login">
+				<img class="usericon" src="../img/ico_loginout.png"><a href="index.html" class="loginout">退出</a>
+			</span>
+		</div>
+		
+		
+	</div>
+	<div class="main">
+		<ul class="nav">
+			<li class="accountChange">
+				<a href="javascript:;">
+					<span class="ico"><img src="../img/ico_switch.png"></span>
+					账号切换
+				</a>
+			</li>
+			<ul class="users grayBorder">
+				<li class="userChoice">广发易淘金</li>
+				<li class="userChoice">广发理财</li>
+				<li class="userChoice">广发手机证券</li>
+				<li class="userChoice">广发手机银行</li>
+			</ul>
+			<li class="monitor">
+				<a href="tending.html">
+					<span class="ico"><img src="../img/ico_tending.png"></span>
+					整体趋势
+				</a>
+			</li>
+			<li class="duty">
+				<a href="structure.html">
+					<span class="ico"><img src="../img/ico_user02.png"></span>
+					用户结构
+				</a>
+			</li>
+			<li class="list">
+				<a href="paint.html">
+					<span class="ico"><img src="../img/ico_userPaingting.png"></span>
+					用户画像
+				</a>
+			</li>
+			<li class="subnav">
+				<span class="ico"><img src="../img/ico_analyze.png"></span>
+				竞争分析
+				<img src="../img/ico_toggle_down.png" alt="" class="icoToggle" />
+			</li>
+			<div class="subList">
+				<a href="hx.html" class="list1" style="clear: both;background:#cde9f6;">
+					<div style="width: 34px;display: inline-block;"></div>
+					<div class="icoWrapper">
+						<img src="../img/ico_hangye.png" alt="" class="" />
+					</div>
+					行业概况
+				</a>
+				<a href="jz.html" class="list2">
+					<div style="width: 34px;display: inline-block;"></div>
+					<div class="icoWrapper">
+						<img src="../img/ico_jzl.png" alt="" class="" />
+					</div>
+					竞争形势
+				</a>
+				<a href="contrast.html" class="list3">
+					<div style="width: 34px;display: inline-block;"></div>
+					<div class="icoWrapper">
+						<img src="../img/ico_zb.png" alt="" class="" />
+					</div>
+					指标对比
+				</a>
+						
+			</div>
+		</ul>
+		<div class="content" style="margin-top: 10px;">
+			<div class="welcomeU">
+				<div class="welText">欢迎您，</div>
+				<div class="xiala">
+					<span class="xialaText">广发易淘金</span> 
+				</div>	
+				<img src="../img/ico_close.png" alt="" class="closeWel" />	
+			</div>
+			<div class="hxSearch grayBorder clearfix" style="padding: 8px 8px;">
+				<div style="float: left;margin-left: 10px;">
+					 	<span style="position: relative;top: 1.5px;">指标类型</span>
+						<div class="zb ellipse2 blue" id="btnMonth" style="border-radius: 100px;position: relative;">
+							<div class="condition">
+								<span class="zbText">月指标</span>
+								<span class="cart" style="border-top:5px solid white; "></span>
+							</div>
+							<ul class="zblist">
+								<li>日指标</li>
+								<li>月指标</li>
+								<li>日累计</li>
+								<li>月累计</li>
+							</ul>
+						</div>
+						<div class="grayBorder ellipse2">
+							2016-1<span class="cart"></span>
+						</div>
+						&nbsp;至&nbsp;
+						<div class="grayBorder ellipse2">
+							2016-3<span class="cart"></span>
+						</div>
+						<button class="rect btnQuery" style="height: 20px;vertical-align: middle;margin-left: 18px;">查询</button>
+					</div>
+			</div>
+			<div class="rankList">
+				<div class="rank rank01" style="margin-left: 0;">
+					<h2 class="rankTitle">No.1</h2>
+					<div class="rankContent">
+						<div class="rankIcon">
+							<img src="../img/weixin.png"/>
+							<p class="rankText">微信</p>
+						</div>
+						<div class="rankNum" style="color:#0edd18;">65.79%</div>
+					</div>
+				</div>
+				<div class="rank rank02">
+					<h2 class="rankTitle">No.2</h2>
+					<div class="rankContent">
+						<div class="rankIcon">
+							<img src="../img/taobao.png"/>
+							<p class="rankText">淘宝</p>
+						</div>
+						<div class="rankNum" style="color:#f59012;">65.79%</div>
+					</div>
+				</div>
+				<div class="rank rank03">
+					<h2 class="rankTitle">No.3</h2>
+					<div class="rankContent">
+						<div class="rankIcon">
+							<img src="../img/QQ.png"/>
+							<p class="rankText">QQ</p>
+						</div>
+						<div class="rankNum" style="color:#1296db;">65.79%</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="tableBox clearfix">
+				<table class="ranktable grayBorder" style="float: left;">
+					<caption>按使用人数排名</caption>
+					<thead>
+						<tr>
+							<td class="tline"></td>
+							<td class="paiming">排名</td>
+							<td>APP名称</td>
+							<td>使用人数</td>
+						</tr>
+					</thead>
+					<tbody >
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">1</td>
+							<td class="appName">
+								<img src="../img/ico_weixin.png" alt="" class="tableico" />
+								<span class="appNameText">微信</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 70%;"></div>
+								</div>
+								<span class="tablenum">82354785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">2</td>
+							<td class="appName">
+								<img src="../img/ico_qq.png" alt="" class="tableico" />
+								<span class="appNameText">QQ</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 56%;"></div>
+								</div>
+								<span class="tablenum">64874981</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">3</td>
+							<td class="appName">
+								<img src="../img/ico_weibo.png" alt="" class="tableico" />
+								<span class="appNameText">微博</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 35%;"></div>
+								</div>
+								<span class="tablenum">1554785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">4</td>
+							<td class="appName">
+								<img src="../img/ico_Facebook.png" alt="" class="tableico" />
+								<span class="appNameText">Facebook</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 66%;"></div>
+								</div>
+								<span class="tablenum">122354785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">5</td>
+							<td class="appName">
+								<img src="../img/ico_whatsapp.png" alt="" class="tableico" />
+								<span class="appNameText">whatsapp</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 40%;"></div>
+								</div>
+								<span class="tablenum">98746549</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">6</td>
+							<td class="appName">
+								<img src="../img/ico_uc.png" alt="" class="tableico" />
+								<span class="appNameText">UC浏览器</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 32%;"></div>
+								</div>
+								<span class="tablenum">3654785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">7</td>
+							<td class="appName">
+								<img src="../img/ico_ele.png" alt="" class="tableico" />
+								<span class="appNameText">饿了么</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 46%;"></div>
+								</div>
+								<span class="tablenum">13354785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">8</td>
+							<td class="appName">
+								<img src="../img/ico_zfb.png" alt="" class="tableico" />
+								<span class="appNameText">支付宝</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 90%;"></div>
+								</div>
+								<span class="tablenum">913354785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">9</td>
+							<td class="appName">
+								<img src="../img/ico_tb.png" alt="" class="tableico" />
+								<span class="appNameText">淘宝</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 76%;"></div>
+								</div>
+								<span class="tablenum">14654785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">10</td>
+							<td class="appName">
+								<img src="../img/ico_jd.png" alt="" class="tableico" />
+								<span class="appNameText">京东</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 69%;"></div>
+								</div>
+								<span class="tablenum">45646844</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="ranktable grayBorder" style="float: right;">
+					<caption>按使用流量排名</caption>
+					<thead>
+						<tr>
+							<td class="tline"></td>
+							<td class="paiming">排名</td>
+							<td>APP名称</td>
+							<td>使用流量</td>
+						</tr>
+					</thead>
+					<tbody >
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">1</td>
+							<td class="appName">
+								<img src="../img/ico_weixin.png" alt="" class="tableico" />
+								<span class="appNameText">微信</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 70%;"></div>
+								</div>
+								<span class="tablenum">82354785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">2</td>
+							<td class="appName">
+								<img src="../img/ico_qq.png" alt="" class="tableico" />
+								<span class="appNameText">QQ</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 56%;"></div>
+								</div>
+								<span class="tablenum">64874981</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">3</td>
+							<td class="appName">
+								<img src="../img/ico_weibo.png" alt="" class="tableico" />
+								<span class="appNameText">微博</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 35%;"></div>
+								</div>
+								<span class="tablenum">1554785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">4</td>
+							<td class="appName">
+								<img src="../img/ico_Facebook.png" alt="" class="tableico" />
+								<span class="appNameText">Facebook</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 66%;"></div>
+								</div>
+								<span class="tablenum">122354785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">5</td>
+							<td class="appName">
+								<img src="../img/ico_whatsapp.png" alt="" class="tableico" />
+								<span class="appNameText">whatsapp</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 40%;"></div>
+								</div>
+								<span class="tablenum">98746549</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">6</td>
+							<td class="appName">
+								<img src="../img/ico_uc.png" alt="" class="tableico" />
+								<span class="appNameText">UC浏览器</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 32%;"></div>
+								</div>
+								<span class="tablenum">3654785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">7</td>
+							<td class="appName">
+								<img src="../img/ico_ele.png" alt="" class="tableico" />
+								<span class="appNameText">饿了么</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 46%;"></div>
+								</div>
+								<span class="tablenum">13354785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">8</td>
+							<td class="appName">
+								<img src="../img/ico_zfb.png" alt="" class="tableico" />
+								<span class="appNameText">支付宝</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 90%;"></div>
+								</div>
+								<span class="tablenum">913354785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">9</td>
+							<td class="appName">
+								<img src="../img/ico_tb.png" alt="" class="tableico" />
+								<span class="appNameText">淘宝</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 76%;"></div>
+								</div>
+								<span class="tablenum">14654785</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="tline">
+								<div class="cellLine"></div>
+							</td>
+							<td class="paiming">10</td>
+							<td class="appName">
+								<img src="../img/ico_jd.png" alt="" class="tableico" />
+								<span class="appNameText">京东</span>
+							</td>
+							<td class="userCount">
+								<div class="tableProgress">
+									<div class="subProgress" style="width: 69%;"></div>
+								</div>
+								<span class="tablenum">45646844</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>

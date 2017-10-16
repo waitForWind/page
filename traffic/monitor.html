@@ -1,0 +1,935 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>交通运输</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/page.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="logo">
+			<img class="logoImg" src="img/logo.png"/> 
+		</div>
+		<div class="userModel">
+			<span class="user">
+				<img class="usericon" src="img/ico_user.png"><a href="javascript:;" class="welcome">管理员，欢迎您!</a>
+			</span>
+			<span class="login">
+				<img class="usericon" src="img/ico_loginout.png"><a href="index.html" class="loginout">退出</a>
+			</span>
+		</div>	
+	</div>
+	
+	<div class="main">
+		
+		<ul class="nav">
+			<li class="monitor activeNav" style="clear: both;">
+				<a href="monitor.html"><img class="ico" src="img/ico_monitor.png"><span class="navText" >违规监控</span></a>
+			</li>
+			<li class="duty">
+				<a href="duty.html">
+					<img class="ico" src="img/ico_duty.png"><span class="navText">值班表</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="list.html">
+					<img class="ico" src="img/ico_list.png"><span class="navText">白名单</span>
+				</a>
+			</li>
+		</ul>
+		<div class="content">
+			
+			<div class="searchBox">
+				<img class="icoSearch" src="img/ico_search.png" / >
+				<div class="query">
+					<div class="item startInput">
+						<label for="startTime">起始时间:</label>
+						<input id="startTime" />
+					</div>
+					<div class="item">
+						<label for="endTime">结束时间:</label>
+						<input id="endTime"/>
+					</div>
+					<div class="item">
+						<label for="workID">工号:</label>
+						<input id="workID"/>
+					</div>
+					<div class="item">
+						<label for="name">姓名:</label>
+						<input id="name"/>
+					</div>
+					<div class="item">
+						<label for="carID">车牌号:</label>
+						<input id="carID"/>
+					</div>
+					<input class="btnSearch btn" type="button"  value="查询" />
+				</div>
+			</div>
+			<div class="caption clearfix">
+				<h2 class="title">公交驾驶员违规监控</h2>
+				<div class="btnGroup">
+					<input class="btn btnViolate" type="button" value="只看违规" />
+					<input class="btn btnOut" type="button" value="导出" />
+				</div>
+			</div>
+			<table class="table tableMonitor">
+				<thead>
+					<tr>
+						<td class="firstCell">全选</td>
+						<td>监控日期</td>
+						<td>司机工号</td>
+						<td>司机姓名</td>
+						<td>司机手机号</td>
+						<td>车牌号码</td>
+						<td>发车时间</td>
+						<td>到站时间</td>
+						<td>备注</td>
+						<td>是否违规</td>
+						<td>通话次数</td>
+						<td>通话时长(分钟)</td>
+						<td class="lastCell">上网流量(兆)</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<!-- here is no 2 -->
+
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2017-03-01 08:00</td>
+						<td>54381</td>
+						<td>张飒</td>
+						<td>11012010086</td>
+						<td>粤B74110</td>
+						<td>17:58</td>
+						<td>19:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>3</td>
+						<td>25</td>
+						<td class="lastCell">20</td>
+					</tr>
+					<!-- here is no 2 -->
+
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+					<tr>
+						<td class="check firstCell">
+							<input type="checkbox"  />
+						</td>
+						<td>2016-06-06 10:00</td>
+						<td>12345</td>
+						<td>李斯</td>
+						<td>15644879745</td>
+						<td>粤C66666</td>
+						<td>11:58</td>
+						<td>13:03</td>
+						<td>备注</td>
+						<td>否</td>
+						<td>5</td>
+						<td>35</td>
+						<td class="lastCell">50</td>
+					</tr>
+				</tbody>
+			</table>	
+		</div>
+
+		<div class="content" style="padding: 0;border: none;">
+			<div class="pageModel clearfix" style="width: 100%;">
+				<span class="showCount">当前一共<span class="pageNum"></span>页,<span class="count"></span>条记录</span>
+				<ul class="page" style="float: right;margin-right: 20px;">
+					<li class="firstPage disable">首页</li>	
+					<li class="lastPage">尾页</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

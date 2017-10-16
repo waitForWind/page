@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>内部审计</title>
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="topbar-box clearfix">
+			<div class="index-wrap">
+				<a href="#" id="logo"><img src="image/logo.png"></a>
+			</div>
+		</div>
+		
+		<div id="photo-box">
+			<div class="index-wrap">
+				<div id="login">
+					<div id="login-title">用户登录</div>
+					<form id="login-form" style="margin-top:20px;">
+						<input type="text" placeholder="用户名" name="username" autofocus="autofocus" /><br />
+						<input type="password" placeholder="密码" />
+						<input type="button" value="登录" style="width: 12em;" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div id="content">
+		<p class="title">企业风险防控卫士</p>
+		<p class="subtitle">提供安全、可靠的服务，降低公司管理风险</p>
+		<a href="#" class="know-more">了解更多</a>
+	</div> -->
+	<script type="text/javascript">
+		document.querySelector('[type=button]').addEventListener('click',function(){
+			// alert("hello");
+			window.location.href = 'all.html';
+		});
+	</script>
+</body>
+</html>

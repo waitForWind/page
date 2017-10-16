@@ -1,0 +1,75 @@
+.terImg{
+	width: 88.94927536231884%!important;
+}
+.locImg{
+	width: 76.81159420289855%!important;
+}
+
+.content{
+	margin-left: 0px;
+	float: right;
+}
+
+.sexImg{
+	width:26.81451%;
+}
+.imgAge{
+	width: 64.67391304347826%!important;
+}
+.numItem img{
+	width: 60%;
+}
+
+.sexNum{
+	margin-left: 5px;
+}
+.showNum{
+	height: 26px;
+	line-height: 26px;
+	width: 60px;
+	margin-right: 6px;
+}
+
+.circle{
+	background-size: 100%;
+	width: 121%;
+	vertical-align: middle;
+}
+
+.speCircle{
+	width: 114%;
+}
+.sex{
+	padding-left: 5px;
+}
+
+.dataContainer{
+	width: 22%;
+	margin-left: 12px;
+}
+
+.dataContainerX{
+	width: 27%;
+}
+
+.icoToggle{
+	margin-left: 4px;
+}
+
+.welcomeU{
+	width: 99.8%;
+}.rank{
+	margin-left: 0.9%;
+}
+
+.rivalLine{
+	margin-left: 6px;
+	margin-right: 6px;
+}
+.rivalBox{
+	padding-left: 6px;
+}
+
+.rivalTips{
+	width: 65px;
+}

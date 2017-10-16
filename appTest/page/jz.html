@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="02text/html;charset=UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/list.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.subList').show();
+		});
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img class="logoImg" src="../img/logo.png"/> <span class="logoName">广东移动</span>
+		</div>
+		<div class="userModel">
+			<span class="user">
+				<img class="usericon" src="../img/ico_user.png"><a href="javascript:;" class="welcome">管理员，欢迎您!</a>
+			</span>
+			<span class="login">
+				<img class="usericon" src="../img/ico_loginout.png"><a href="javascript:;" class="loginout">退出</a>
+			</span>
+		</div>	
+	</div>
+	<div class="main">
+		<ul class="nav">
+			<li class="accountChange">
+				<a href="javascript:;">
+					<span class="ico"><img src="../img/ico_switch.png"></span>
+					账号切换
+				</a>
+			</li>
+			<ul class="users grayBorder">
+				<li class="userChoice">广发易淘金</li>
+				<li class="userChoice">广发理财</li>
+				<li class="userChoice">广发手机证券</li>
+				<li class="userChoice">广发手机银行</li>
+			</ul>
+			<li class="monitor" >
+				<a href="tending.html">
+					<span class="ico"><img src="../img/ico_tending.png"></span>
+					整体趋势
+				</a>
+			</li>
+			<li class="duty">
+				<a href="structure.html">
+					<span class="ico"><img src="../img/ico_user02.png"></span>
+					用户结构
+				</a>
+			</li>
+			<li class="list">
+				<a href="paint.html">
+					<span class="ico"><img src="../img/ico_userPaingting.png"></span>
+					用户画像
+				</a>
+			</li>
+			<li class="subnav">
+				<span class="ico"><img src="../img/ico_analyze.png"></span>
+				竞争分析
+				<img src="../img/ico_toggle_down.png" alt="" class="icoToggle" />
+			</li>
+			<div class="subList">
+				<a href="hx.html" class="list1">
+					<div style="width: 34px;display: inline-block;"></div>
+					<div class="icoWrapper">
+						<img src="../img/ico_hangye.png" alt="" class="" />
+					</div>
+					行业概况
+				</a>
+				<a href="jz.html" class="list2" style="clear: both;background:#cde9f6;">
+					<div style="width: 34px;display: inline-block;"></div>
+					<div class="icoWrapper">
+						<img src="../img/ico_jzl.png" alt="" class="" />
+					</div>
+					竞争形势
+				</a>
+				<a href="contrast.html" class="list3">
+					<div style="width: 34px;display: inline-block;"></div>
+					<div class="icoWrapper">
+						<img src="../img/ico_zb.png" alt="" class="" />
+					</div>
+					指标对比
+				</a>
+						
+			</div>
+		</ul>
+		<div class="content" style="margin-top: 10px;">
+			<div class="welcomeU">
+				<div class="welText">欢迎您，</div>
+				<div class="xiala">
+					<span class="xialaText">广发易淘金</span> 
+				</div>	
+				<img src="../img/ico_close.png" alt="" class="closeWel" />	
+			</div>
+			<div class="rivalBox grayBorder clearfix">
+				<div class="rival">
+					<div class="rivalLeft">
+						<img src="../img/user001.png" alt="" class="rivalIco" />
+						<p>使用对手<br/>APP用户</p>
+					</div>
+					<div class="rivalRight">
+						<div class="rivalRT">
+							<p>今日</p>
+							<div>
+								<span class="rivalTips">1,456</span>
+								<span class="huanbiB">环比&nbsp;2%<strong>↑</strong></span>
+							</div>
+						</div>
+						<div class="rivalRB" style="margin-top: 5px;">
+							<p>本月</p>
+							<div>
+								<span class="rivalTips">1,456</span>
+								<span class="huanbiB">环比&nbsp;2%<strong>↑</strong></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rivalLine"></div>
+				<div class="rival">
+					<div class="rivalLeft">
+						<img src="../img/user002.png" class="rivalIco" style="left: 8px;" />
+						<p>新增使用对<br/>手APP用户</p>
+					</div>
+					<div class="rivalRight">
+						<div class="rivalRT">
+							<p>今日</p>
+							<div>
+								<span class="rivalTips">1,456</span>
+								<span class="huanbiR">环比&nbsp;2%<strong>↓</strong></span>
+							</div>
+						</div>
+						<div class="rivalRB" style="margin-top: 5px;">
+							<p>本月</p>
+							<div>
+								<span class="rivalTips">1,456</span>
+								<span class="huanbiR">环比&nbsp;2%<strong>↓</strong></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rivalLine"></div>
+				<div class="rival">
+					<div class="rivalLeft">
+						<img src="../img/user003.png" alt="" class="rivalIco" />
+						<p>竞争对手</p>
+					</div>
+					<div class="rivalRight">
+						<div class="rivalPercent">
+							<span class="rivalName">微信</span>
+							<div class="rivalStrip" style="width: 50%;"></div>
+							<span>35%</span>
+						</div>
+						<div class="rivalPercent">
+							<span class="rivalName">微博</span>
+							<div class="rivalStrip" style="width: 40%;"></div>
+							<span>25%</span>
+						</div>
+						<div class="rivalPercent">
+							<span class="rivalName">QQ</span>
+							<div class="rivalStrip" style="width: 35%;"></div>
+							<span>15%</span>
+						</div>
+					</div>
+				</div>
+				<div class="rivalLine"></div>
+				<div class="rival">
+					<div class="rivalLeft">
+						<img src="../img/value.png" alt="" class="rivalIco" />
+						<p>竞争对手</p>
+					</div>
+					<div class="rivalRight">
+						<div class="rivalValue">
+							<p>今日活跃用户</p>
+							<div class="valueNum" style="color: #0085d0;">
+								1,456
+							</div>
+						</div>
+						<div class="rivalValue" style="margin-left: 10px;">
+							<p>今日活跃用户</p>
+							<div class="valueNum" style="color: #f3a90b;">
+								1,456
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rivalGraph clearfix grayBorder">
+				<ul class="rivalNav clearfix">
+					<li class="rivalItem active">争抢用户</li>
+					<li class="rivalItem">新增被争抢</li>
+					<li class="rivalItem">竞争程度</li>
+					<li class="rivalItem">竞争对手排名</li>
+					<li class="rivalItem">被争抢用户价值</li>
+					<span id="rivalSlider"></span>
+				</ul>
+				<div style="float: right;margin-top: 20px;margin-right: 20px;">
+				 	<span style="position: relative;top: 1.5px;">指标类型</span>
+					<div class="zb ellipse2 blue" id="btnMonth" style="border-radius: 100px;position: relative;">
+						<div class="condition">
+							<span class="zbText">月指标</span>
+							<span class="cart" style="border-top:5px solid white; "></span>
+						</div>
+						<ul class="zblist">
+							<li>日指标</li>
+							<li>月指标</li>
+							<li>日累计</li>
+							<li>月累计</li>
+						</ul>
+					</div>
+					<div class="grayBorder ellipse2">
+						2016-1<span class="cart"></span>
+					</div>
+					&nbsp;至&nbsp;
+					<div class="grayBorder ellipse2">
+						2016-3<span class="cart"></span>
+					</div>
+					<button class="rect btnQuery" style="height: 20px;vertical-align: middle;margin-left: 18px;">查询</button>
+				</div>
+				<img class="rivalImg" src="../img/rival.png" />
+			</div>
+			<div class="mingxi grayBorder clearfix">
+				<div class="mingxiTitle">
+					<span class="v-line blue"></span>
+					明细数据
+					<div id="shouqi">
+						收起
+						<img src="../img/ico_shouqi.png">
+					</div>
+					<div id="zhankai">
+						展开
+						<img src="../img/ico_zhankai.png">
+					</div>
+					<button class="btnMingxi rect">导出明细</button>
+				</div>
+				<table class="mingxiTable">
+					<thead>
+						<tr>
+							<td>时间</td>
+							<td>争抢用户</td>
+							<td>新增被争抢</td>
+							<td>竞争程度</td>
+							<td>竞争对手排名</td>
+							<td>被争抢用户价值</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="blueText">
+							<td>2016-01-06</td>
+							<td>456</td>
+							<td>4899</td>
+							<td>7799</td>
+							<td>2211</td>
+							<td>1000</td>
+						</tr>
+						<tr>
+							<td>2016-01-06</td>
+							<td>456</td>
+							<td>4899</td>
+							<td>7799</td>
+							<td>2211</td>
+							<td>1000</td>
+						</tr>
+						<tr>
+							<td>2016-01-06</td>
+							<td>456</td>
+							<td>4899</td>
+							<td>7799</td>
+							<td>2211</td>
+							<td>1000</td>
+						</tr>
+						<tr>
+							<td>2016-01-06</td>
+							<td>456</td>
+							<td>4899</td>
+							<td>7799</td>
+							<td>2211</td>
+							<td>1000</td>
+						</tr>
+						<tr>
+							<td>2016-01-06</td>
+							<td>456</td>
+							<td>4899</td>
+							<td>7799</td>
+							<td>2211</td>
+							<td>1000</td>
+						</tr>
+						<tr>
+							<td>2016-01-06</td>
+							<td>456</td>
+							<td>4899</td>
+							<td>7799</td>
+							<td>2211</td>
+							<td>1000</td>
+						</tr>
+						<tr>
+							<td>2016-01-06</td>
+							<td>456</td>
+							<td>4899</td>
+							<td>7799</td>
+							<td>2211</td>
+							<td>1000</td>
+						</tr>
+						<tr>
+							<td>2016-01-06</td>
+							<td>456</td>
+							<td>4899</td>
+							<td>7799</td>
+							<td>2211</td>
+							<td>1000</td>
+						</tr>
+						<tr>
+							<td>2016-01-06</td>
+							<td>456</td>
+							<td>4899</td>
+							<td>7799</td>
+							<td>2211</td>
+							<td>1000</td>
+						</tr>
+						<tr>
+							<td>2016-01-06</td>
+							<td>456</td>
+							<td>4899</td>
+							<td>7799</td>
+							<td>2211</td>
+							<td>1000</td>
+						</tr>
+						<tr>
+							<td>2017-02-07</td>
+							<td>8856</td>
+							<td>1399</td>
+							<td>2399</td>
+							<td>3211</td>
+							<td>2300</td>
+						</tr>
+						<tr>
+							<td>2017-02-07</td>
+							<td>8856</td>
+							<td>1399</td>
+							<td>2399</td>
+							<td>3211</td>
+							<td>2300</td>
+						</tr>
+						<tr>
+							<td>2017-02-07</td>
+							<td>8856</td>
+							<td>1399</td>
+							<td>2399</td>
+							<td>3211</td>
+							<td>2300</td>
+						</tr>
+						<tr>
+							<td>2017-02-07</td>
+							<td>8856</td>
+							<td>1399</td>
+							<td>2399</td>
+							<td>3211</td>
+							<td>2300</td>
+						</tr>
+						<tr>
+							<td>2017-02-07</td>
+							<td>8856</td>
+							<td>1399</td>
+							<td>2399</td>
+							<td>3211</td>
+							<td>2300</td>
+						</tr>
+						<tr>
+							<td>2017-02-07</td>
+							<td>8856</td>
+							<td>1399</td>
+							<td>2399</td>
+							<td>3211</td>
+							<td>2300</td>
+						</tr>
+						<tr>
+							<td>2017-02-07</td>
+							<td>8856</td>
+							<td>1399</td>
+							<td>2399</td>
+							<td>3211</td>
+							<td>2300</td>
+						</tr>
+						<tr>
+							<td>2017-02-07</td>
+							<td>8856</td>
+							<td>1399</td>
+							<td>2399</td>
+							<td>3211</td>
+							<td>2300</td>
+						</tr>
+						<tr>
+							<td>2017-02-07</td>
+							<td>8856</td>
+							<td>1399</td>
+							<td>2399</td>
+							<td>3211</td>
+							<td>2300</td>
+						</tr>
+						<tr>
+							<td>2017-02-07</td>
+							<td>8856</td>
+							<td>1399</td>
+							<td>2399</td>
+							<td>3211</td>
+							<td>2300</td>
+						</tr>
+						<tr>
+							<td>2015-12-12</td>
+							<td>1212</td>
+							<td>2323</td>
+							<td>2333</td>
+							<td>6666</td>
+							<td>5555</td>
+						</tr>
+						<tr>
+							<td>2015-12-12</td>
+							<td>1212</td>
+							<td>2323</td>
+							<td>2333</td>
+							<td>6666</td>
+							<td>5555</td>
+						</tr>
+						<tr>
+							<td>2015-12-12</td>
+							<td>1212</td>
+							<td>2323</td>
+							<td>2333</td>
+							<td>6666</td>
+							<td>5555</td>
+						</tr>
+						<tr>
+							<td>2015-12-12</td>
+							<td>1212</td>
+							<td>2323</td>
+							<td>2333</td>
+							<td>6666</td>
+							<td>5555</td>
+						</tr>
+						<tr>
+							<td>2015-12-12</td>
+							<td>1212</td>
+							<td>2323</td>
+							<td>2333</td>
+							<td>6666</td>
+							<td>5555</td>
+						</tr>
+
+						
+					</tbody>
+				</table>
+				<div class="pagePart">
+					<div class="pageModel clearfix" style="text-align: center;">
+					<div class="showCount">
+						当前一共<span class="pageNum"></span>页,<span class="count"></span>条记录
+					</div>
+
+					<ul class="page clearfix">
+						<li class="firstPage rect grayBorder disable">首页</li>	
+						<li class="pre rect grayBorder">上一页</li>
+						<li class="next rect grayBorder">下一页</li>
+						<li class="lastPage rect grayBorder">尾页</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
